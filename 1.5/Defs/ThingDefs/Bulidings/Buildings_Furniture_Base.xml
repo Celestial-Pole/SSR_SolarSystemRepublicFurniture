@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="TableGatherSpotBase" Name="SSR_BuildingBase_Furniture_TableGatherSpotBase" Abstract="True">
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+    <ThingDef ParentName="SansComfortBedBase" Name="SSR_BuildingBase_Furniture_SansComfortBedBase" Abstract="True">
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+    <ThingDef ParentName="TableBase" Name="SSR_BuildingBase_Furniture_TableBase" Abstract="True">
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+    <ThingDef ParentName="FurnitureWithQualityBase" Name="SSR_BuildingBase_Furniture_FurnitureWithQualityBase" Abstract="True">
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

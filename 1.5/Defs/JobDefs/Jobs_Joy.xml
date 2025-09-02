@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>Use_SSR_Game</defName>
+		<driverClass>JobDriver_WatchBuilding</driverClass>
+		<reportString>玩游戏机。</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>1</joyMaxParticipants>
+		<joyKind>SSR_JoyKind_Game</joyKind>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+</Defs>

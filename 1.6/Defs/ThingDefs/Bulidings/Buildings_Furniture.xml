@@ -1,0 +1,1845 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 办公桌 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Desk</defName>
+		<label>办公桌</label>
+		<description>办公桌</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Desk/Desk</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>3300</WorkToBuild>
+			<Mass>22</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+		</statBases>
+		<size>(3,1)</size>
+		<costStuffCount>100</costStuffCount>
+		<rotatable>false</rotatable>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+	</ThingDef>
+
+	<!-- 沙发床 -->
+
+	<ThingDef ParentName="BasicBedBase">
+		<defName>SSR_SofaBed</defName>
+		<label>沙发床</label>
+		<description>沙发床</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SSR_Bed/SofaBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>1.75</BedRestEffectiveness>
+		</statBases>
+		<size>(1,2)</size>
+		<costStuffCount>45</costStuffCount>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiOrder>2010</uiOrder>
+		<building>
+			<paintable>true</paintable>
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+		</building>
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- 床 -->
+
+	<ThingDef ParentName="BasicBedBase">
+		<defName>SSR_Bed</defName>
+		<label>床</label>
+		<description>床</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SSR_Bed/Bed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>30</Mass>
+			<BedRestEffectiveness>1.75</BedRestEffectiveness>
+		</statBases>
+		<size>(1,2)</size>
+		<costStuffCount>45</costStuffCount>
+		<designationHotKey>Misc2</designationHotKey>
+		<uiOrder>2010</uiOrder>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- 双人床 -->
+
+	<ThingDef ParentName="BasicBedBase">
+		<defName>SSR_DoubleBed</defName>
+		<label>双人床</label>
+		<description>双人床</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SSR_Bed/DoubleBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.05,2.05)</drawSize>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>50</Mass>
+			<Beauty>10</Beauty>
+			<BedRestEffectiveness>1.75</BedRestEffectiveness>
+		</statBases>
+		<size>(2,2)</size>
+		<costStuffCount>85</costStuffCount>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<designationHotKey>Misc3</designationHotKey>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- 婴儿床 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_SansComfortBedBase">
+		<defName>SSR_Crib</defName>
+		<label>婴儿床</label>
+		<description>婴儿床</description>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SSR_Bed/Crib</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.8,0.4,0.9)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<statBases>
+			<BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">0</BirthRitualQualityOffset>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>15</Mass>
+			<BedRestEffectiveness>1.75</BedRestEffectiveness>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>25</costStuffCount>
+		<uiOrder>2022</uiOrder>
+		<building>
+			<bed_maxBodySize>0.25</bed_maxBodySize>			<!-- Larger than HumanlikeBaby.BodySizeFactor but less than HumanlikeChild.BodySizeFactor. -->
+			<bed_showSleeperBody>True</bed_showSleeperBody>
+			<bed_emptyCountsForBarracks>false</bed_emptyCountsForBarracks>
+			<bed_crib>True</bed_crib>
+			<bed_pawnDrawOffset>-0.15</bed_pawnDrawOffset>
+			<bed_DisplayOwnerType>false</bed_DisplayOwnerType>
+			<paintable>true</paintable>
+		</building>
+		<researchPrerequisites Inherit="False">
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- 床头柜 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableBase">
+		<defName>SSR_BedsideTable</defName>
+		<label>床头柜</label>
+		<description>床头柜</description>
+		<surfaceType>Item</surfaceType>
+		<uiOrder>2060</uiOrder>
+		<graphicData>
+			<texPath>Things/Building/Furniture/BedsideTable/BedsideTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>3</Beauty>
+		</statBases>
+		<pathCost>30</pathCost>
+		<costStuffCount>30</costStuffCount>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.08</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+			</li>
+		</comps>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<castEdgeShadows>false</castEdgeShadows>
+	</ThingDef>
+
+	<!-- 椅子 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Chair</defName>
+		<label>椅子</label>
+		<description>椅子</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Chair/Chair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>14000</WorkToBuild>
+			<Mass>35</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>1.2</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>110</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2420</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<!-- 办公椅 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_OfficeChair</defName>
+		<label>办公椅</label>
+		<description>办公椅</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Chair/OfficeChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>14000</WorkToBuild>
+			<Mass>35</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>1.2</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>110</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2420</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<!-- 沙发椅 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_SofaChair</defName>
+		<label>沙发椅</label>
+		<description>沙发椅</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Chair/SofaChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>14000</WorkToBuild>
+			<Mass>35</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+			<Comfort>1.5</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>110</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2420</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<!-- 方形小餐桌 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_SquareTable1x1c</defName>
+		<label>方形小餐桌</label>
+		<description>方形小餐桌</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Table/SquareTable1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<rotatable>false</rotatable>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<!-- 圆形小餐桌 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_RotundityTable1x1c</defName>
+		<label>圆形小餐桌</label>
+		<description>圆形小餐桌</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Table/RotundityTable1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<rotatable>false</rotatable>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<!-- 茶几1x1 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_EndTable1x1c</defName>
+		<label>茶几(方角)1x1</label>
+		<description>茶几(方角)1x1</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/EndTable/EndTable1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_EndTableR1x1c</defName>
+		<label>茶几(圆角)1x1</label>
+		<description>茶几(圆角)1x1</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/EndTable/EndTableR1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<!-- 茶几1x2 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_EndTable1x2c</defName>
+		<label>茶几(方角)1x2</label>
+		<description>茶几(方角)1x2</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/EndTable/EndTable1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(2,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_EndTableR1x2c</defName>
+		<label>茶几(圆角)1x2</label>
+		<description>茶几(圆角)1x2</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/EndTable/EndTableR1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(2,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<!-- 茶几1x3 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_EndTable1x3c</defName>
+		<label>茶几(方角)1x3</label>
+		<description>茶几(方角)1x3</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/EndTable/EndTable1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(3,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_EndTableR1x3c</defName>
+		<label>茶几(圆角)1x3</label>
+		<description>茶几(圆角)1x3</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/EndTable/EndTableR1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(3,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<!-- 课桌1x1 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_SchoolTable1x1c</defName>
+		<label>课桌1x1</label>
+		<description>A desk where adults can teach lessons to children.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SchoolTable/SchoolTable1x1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiIconScale>0.8</uiIconScale>
+		<uiOrder>2305</uiOrder>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<interactionCellIcon>DiningChair</interactionCellIcon>
+		<multipleInteractionCellOffsets>
+			<li>(0,0,-1)</li>
+		</multipleInteractionCellOffsets>
+		<descriptionHyperlinks>
+			<ThingDef>SSR_Blackboard</ThingDef>
+		</descriptionHyperlinks>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SSR_Blackboard</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_StatEntry">
+				<compClass>CompStatEntrySchoolDesk</compClass>
+				<statCategoryDef>Building</statCategoryDef>
+				<statLabel>Learning rate bonus</statLabel>
+				<reportText>A multiplier on how quickly children learn during lessons which are assisted by this.</reportText>
+				<displayPriorityInCategory>300</displayPriorityInCategory>
+			</li>
+			<li Class="CompProperties_InspectString">
+				<compClass>CompInspectStringSchooldesk</compClass>
+				<inspectString>Learning rate bonus</inspectString>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 课桌1x2 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_SchoolTable1x2c</defName>
+		<label>课桌1x2</label>
+		<description>A desk where adults can teach lessons to children.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/SchoolTable/SchoolTable1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiIconScale>0.8</uiIconScale>
+		<uiOrder>2305</uiOrder>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<interactionCellIcon>DiningChair</interactionCellIcon>
+		<multipleInteractionCellOffsets>
+			<li>(1,0,-1)</li>
+			<li>(0,0,-1)</li>
+		</multipleInteractionCellOffsets>
+		<descriptionHyperlinks>
+			<ThingDef>SSR_Blackboard</ThingDef>
+		</descriptionHyperlinks>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+		</statBases>
+		<size>(2,1)</size>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SSR_Blackboard</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_StatEntry">
+				<compClass>CompStatEntrySchoolDesk</compClass>
+				<statCategoryDef>Building</statCategoryDef>
+				<statLabel>Learning rate bonus</statLabel>
+				<reportText>A multiplier on how quickly children learn during lessons which are assisted by this.</reportText>
+				<displayPriorityInCategory>300</displayPriorityInCategory>
+			</li>
+			<li Class="CompProperties_InspectString">
+				<compClass>CompInspectStringSchooldesk</compClass>
+				<inspectString>Learning rate bonus</inspectString>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 黑板 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Blackboard</defName>
+		<label>黑板</label>
+		<description>黑板</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Blackboard/Blackboard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+			<drawSize>(3,2)</drawSize>
+			<damageData>
+				<rectN>(0.1, 0.3, 1.8, 0.5)</rectN>
+				<rectS>(0.1, 0.3, 1.8, 0.5)</rectS>
+				<rectE>(0.45, 0, 0.2, 1)</rectE>
+				<rectW>(0.55, 0, 0.2, 1)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(2, 0.5, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<descriptionHyperlinks>
+			<ThingDef>SchoolDesk</ThingDef>
+		</descriptionHyperlinks>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>7</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<size>(3,1)</size>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_InspectString">
+				<compClass>CompInspectStringBlackboard</compClass>
+				<inspectString>Learning rate</inspectString>
+			</li>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>3</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_WallMountedBlackboard</defName>
+		<label>黑板（挂式）</label>
+		<description>黑板（挂式）</description>
+		<size>(3,1)</size>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Blackboard/WallMountedBlackboard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+			<drawOffsetEast>(0.3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(-0.3,0,0)</drawOffsetWest>
+			<drawSize>(3,1)</drawSize>
+			<damageData>
+				<rectN>(0.1, 0.3, 1.8, 0.5)</rectN>
+				<rectS>(0.1, 0.3, 1.8, 0.5)</rectS>
+				<rectE>(0.45, 0, 0.2, 1)</rectE>
+				<rectW>(0.55, 0, 0.2, 1)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(2, 0.5, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<descriptionHyperlinks>
+			<ThingDef>SchoolDesk</ThingDef>
+		</descriptionHyperlinks>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>7</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<placeWorkers>
+			<li>Placeworker_AttachedToWall</li>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<paintable>true</paintable>
+			<isEdifice>false</isEdifice>
+			<isAttachment>true</isAttachment>
+		</building>
+		<comps>
+			<li Class="CompProperties_InspectString">
+				<compClass>CompInspectStringBlackboard</compClass>
+				<inspectString>Learning rate</inspectString>
+			</li>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>3</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 旗帜 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_EFFlag</defName>
+		<label>旗帜</label>
+		<description>旗帜</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.40</fillPercent>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<uiIconPath>Things/Building/Furniture/Flag/Flag</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+			<Cloth>50</Cloth>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<pathCost>14</pathCost>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<building>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+			<texPath>Things/Building/Furniture/Flag/Flag_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<comps>
+			<li Class="FS_SSR.Generic.TCP_DrawOverlay">
+				<overlay>
+					<texPath>Things/Building/Furniture/Flag/Flag_Top</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(1,2)</drawSize>
+					<drawOffset>(0,0,0.5)</drawOffset>
+				</overlay>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ====组合式沙发==== -->
+
+	<!-- 组合式沙发(A) -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Couch_A_Lift</defName>
+		<label>组合式沙发(A)左侧</label>
+		<description>组合式沙发(A)左侧</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Couch/Couch_A/Couch_A_Lift</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Comfort>1.6</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>200</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<size>(1,1)</size>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2430</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Couch_A_Middle</defName>
+		<label>组合式沙发(A)中间</label>
+		<description>组合式沙发(A)中间</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Couch/Couch_A/Couch_A_Middle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Comfort>1.6</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>200</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<size>(1,1)</size>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2430</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Couch_A_Right</defName>
+		<label>组合式沙发(A)右侧</label>
+		<description>组合式沙发(A)右侧</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Couch/Couch_A/Couch_A_Right</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Comfort>1.6</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>200</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<size>(1,2)</size>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2430</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<!-- 组合式沙发(B) -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Couch_B_Lift</defName>
+		<label>组合式沙发(B)左侧</label>
+		<description>组合式沙发(B)左侧</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Couch/Couch_B/Couch_B_Lift</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Comfort>1.6</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>200</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<size>(1,2)</size>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2430</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Couch_B_Middle</defName>
+		<label>组合式沙发(B)中间</label>
+		<description>组合式沙发(B)中间</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Couch/Couch_B/Couch_B_Middle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Comfort>1.6</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>200</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<size>(1,1)</size>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2430</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Couch_B_Right</defName>
+		<label>组合式沙发(B)右侧</label>
+		<description>组合式沙发(B)右侧</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Couch/Couch_B/Couch_B_Right</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>320</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Mass>70</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>15</Beauty>
+			<Comfort>1.6</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>200</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<size>(1,1)</size>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2430</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<multiSittable>true</multiSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<!-- ====组合式衣柜==== -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_SeparateWardrobe</defName>
+		<label>独立衣柜</label>
+		<description>独立衣柜</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Wardrobe/SeparateWardrobe</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>15</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Wardrobe_Lift</defName>
+		<label>衣柜(左)</label>
+		<description>衣柜(左)</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Wardrobe/Wardrobe_Lift</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>15</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Wardrobe_Middle</defName>
+		<label>衣柜(中)</label>
+		<description>衣柜(中)</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Wardrobe/Wardrobe_Middle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>15</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Wardrobe_Right</defName>
+		<label>衣柜(右)</label>
+		<description>衣柜(右)</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Wardrobe/Wardrobe_Right</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>15</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ====组合式桌子==== -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Table_A_Corner</defName>
+		<label>组合式桌子(角)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ModularTable/Table_A_Corner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Table_A_Edge</defName>
+		<label>组合式桌子(边)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ModularTable/Table_A_Edge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Table_A_Centre</defName>
+		<label>组合式桌子(中心)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ModularTable/Table_A_Centre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<!-- ====组合式餐桌==== -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Table_B_Corner</defName>
+		<label>组合式餐桌(角)样式1</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ModularTable/Table_B_Corner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Table_BB_Corner</defName>
+		<label>组合式餐桌(角)样式2</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ModularTable/Table_BB_Corner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Table_B_Edge</defName>
+		<label>组合式餐桌(边)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ModularTable/Table_B_Edge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Table_B_Centre</defName>
+		<label>组合式餐桌(中心)</label>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ModularTable/Table_A_Centre</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>28</costStuffCount>
+	</ThingDef>
+
+</Defs>

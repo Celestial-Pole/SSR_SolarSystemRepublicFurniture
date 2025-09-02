@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 游戏机 -->
+	<JoyKindDef>
+		<defName>SSR_JoyKind_Game</defName>
+		<label>玩游戏机</label>
+	</JoyKindDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 游戏机 -->
+
+	<JoyGiverDef>
+		<defName>Use_SSR_Game</defName>
+		<giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+		<baseChance>6</baseChance>
+		<thingDefs>
+			<li>SSR_Game</li>
+		</thingDefs>
+		<jobDef>Use_SSR_Game</jobDef>
+		<joyKind>SSR_JoyKind_Game</joyKind>
+		<unroofedOnly>true</unroofedOnly>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+</Defs>

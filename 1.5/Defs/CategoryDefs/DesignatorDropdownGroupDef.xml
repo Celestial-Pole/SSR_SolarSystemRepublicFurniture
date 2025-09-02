@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SSRFloor_Carpet</defName>
+		<label>地毯</label>
+		<iconSource>Placed</iconSource>
+		<useGridMenu>false</useGridMenu>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SSRCarpet_FloorCoveringI</defName>
+		<label>原味地毯</label>
+		<iconSource>Placed</iconSource>
+		<useGridMenu>false</useGridMenu>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SSRCarpet_FloorCoveringII</defName>
+		<label>折纹地毯</label>
+		<iconSource>Placed</iconSource>
+		<useGridMenu>false</useGridMenu>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SSRCarpet_FloorCoveringIII</defName>
+		<label>菱形纹路地毯</label>
+		<iconSource>Placed</iconSource>
+		<useGridMenu>false</useGridMenu>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SSRCarpet_FloorCoveringIV</defName>
+		<label>黑底金纹地毯</label>
+		<iconSource>Placed</iconSource>
+		<useGridMenu>false</useGridMenu>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SSR_TabletopFlowerpot</defName>
+		<label>桌面花盆</label>
+		<iconSource>Placed</iconSource>
+		<useGridMenu>false</useGridMenu>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SSR_Flowerpot</defName>
+		<label>花盆</label>
+		<iconSource>Placed</iconSource>
+		<useGridMenu>false</useGridMenu>
+	</DesignatorDropdownGroupDef>
+
+</Defs>

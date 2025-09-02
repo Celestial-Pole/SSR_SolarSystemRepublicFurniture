@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>[SSR]Solar System Republic Furniture Part 太阳系共和国家具包</name>
+	<packageId>SSR.Furniture</packageId>
+	<author>Celestial Pole,奈亚,世故绮罗</author>
+	<url></url>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>SSR.Core</li>
+	</loadAfter>
+	<description>太阳系共和国家具包</description>
+</ModMetaData>

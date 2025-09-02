@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 地板——地毯 -->
+	<TerrainDef Abstract="True" ParentName="SSRFloorBase" Name="SSRCarpetFloorBase">
+		<designatorDropdown>SSRFloor_Carpet</designatorDropdown>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<isPaintable>true</isPaintable>
+		<researchPrerequisites>
+			<li>CarpetMaking</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SSRCarpetFloorBase">
+		<defName>SSRCarpetI</defName>
+		<label>原味地毯</label>
+		<texturePath>Things/Building/Floor/SSRCarpetI</texturePath>
+		<renderPrecedence>240</renderPrecedence>
+		<description>原味地毯</description>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+			<CleaningTimeFactor>0.4</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Cloth>7</Cloth>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SSRCarpetFloorBase">
+		<defName>SSRCarpetII</defName>
+		<label>折纹地毯</label>
+		<texturePath>Things/Building/Floor/SSRCarpetII</texturePath>
+		<renderPrecedence>240</renderPrecedence>
+		<description>折纹地毯</description>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+			<CleaningTimeFactor>0.4</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Cloth>7</Cloth>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SSRCarpetFloorBase">
+		<defName>SSRCarpetIII</defName>
+		<label>菱形纹路地毯</label>
+		<texturePath>Things/Building/Floor/SSRCarpetIII</texturePath>
+		<renderPrecedence>240</renderPrecedence>
+		<description>菱形纹路地毯</description>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+			<CleaningTimeFactor>0.4</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Cloth>7</Cloth>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="SSRCarpetFloorBase">
+		<defName>SSRCarpetIV</defName>
+		<label>黑底金纹地毯</label>
+		<texturePath>Things/Building/Floor/SSRCarpetIV</texturePath>
+		<renderPrecedence>240</renderPrecedence>
+		<description>黑底金纹地毯</description>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+			<CleaningTimeFactor>0.4</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<Cloth>7</Cloth>
+		</costList>
+	</TerrainDef>
+
+	<!-- 建筑——地毯 -->
+
+	<ThingDef Abstract="True" Name="SSRBuildingFloorCoveringBase" ParentName="BuildingBase">
+		<altitudeLayer>FloorCoverings</altitudeLayer>
+		<wipesPlants>true</wipesPlants>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<selectable>true</selectable>
+		<useHitPoints>true</useHitPoints>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<canGenerateDefaultDesignator>true</canGenerateDefaultDesignator>
+		<blocksAltitudes>
+			<li>FloorCoverings</li>
+		</blocksAltitudes>
+		<researchPrerequisites>
+			<li>CarpetMaking</li>
+		</researchPrerequisites>
+		<statBases>
+			<Beauty>30</Beauty>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>150</Mass>
+		</statBases>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+				<designatorClass>Designator_Build</designatorClass>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<TerrainDef Abstract="True" ParentName="SSRBuildingFloorCoveringBase" Name="SSRBuildingFloorCoveringI">
+		<designatorDropdown>SSRCarpet_FloorCoveringI</designatorDropdown>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="SSRBuildingFloorCoveringBase" Name="SSRBuildingFloorCoveringII">
+		<designatorDropdown>SSRCarpet_FloorCoveringII</designatorDropdown>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="SSRBuildingFloorCoveringBase" Name="SSRBuildingFloorCoveringIII">
+		<designatorDropdown>SSRCarpet_FloorCoveringIII</designatorDropdown>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="SSRBuildingFloorCoveringBase" Name="SSRBuildingFloorCoveringIV">
+		<designatorDropdown>SSRCarpet_FloorCoveringIV</designatorDropdown>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>
+
+	<!-- 原味地毯 -->
+	<ThingDef ParentName="SSRBuildingFloorCoveringI">
+		<defName>SSRCarpet_FloorCoveringI_A</defName>
+		<label>原味地毯1x2</label>
+		<description>原味地毯1x2</description>
+		<size>(1,2)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringI_A</texPath>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringI">
+		<defName>SSRCarpet_FloorCoveringI_B</defName>
+		<label>原味地毯2x2</label>
+		<description>原味地毯2x2</description>
+		<size>(2,2)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringI_B</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringI">
+		<defName>SSRCarpet_FloorCoveringI_C</defName>
+		<label>原味地毯2x3</label>
+		<description>原味地毯2x3</description>
+		<size>(2,3)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringI_C</texPath>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringI">
+		<defName>SSRCarpet_FloorCoveringI_D</defName>
+		<label>原味地毯2x4</label>
+		<description>原味地毯2x4</description>
+		<size>(2,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringI_D</texPath>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringI">
+		<defName>SSRCarpet_FloorCoveringI_E</defName>
+		<label>原味地毯3x3</label>
+		<description>原味地毯3x3</description>
+		<size>(3,3)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringI_E</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringI">
+		<defName>SSRCarpet_FloorCoveringI_F</defName>
+		<label>原味地毯3x4</label>
+		<description>原味地毯3x4</description>
+		<size>(3,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringI_F</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringI">
+		<defName>SSRCarpet_FloorCoveringI_G</defName>
+		<label>原味地毯4x4</label>
+		<description>原味地毯4x4</description>
+		<size>(4,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringI_G</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<!-- 折纹地毯 -->
+	<ThingDef ParentName="SSRBuildingFloorCoveringII">
+		<defName>SSRCarpet_FloorCoveringII_A</defName>
+		<label>折纹地毯1x2</label>
+		<description>折纹地毯1x2</description>
+		<size>(1,2)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringII_A</texPath>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringII">
+		<defName>SSRCarpet_FloorCoveringII_B</defName>
+		<label>折纹地毯2x2</label>
+		<description>折纹地毯2x2</description>
+		<size>(2,2)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringII_B</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringII">
+		<defName>SSRCarpet_FloorCoveringII_C</defName>
+		<label>折纹地毯2x3</label>
+		<description>折纹地毯2x3</description>
+		<size>(2,3)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringII_C</texPath>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringII">
+		<defName>SSRCarpet_FloorCoveringII_D</defName>
+		<label>折纹地毯2x4</label>
+		<description>折纹地毯2x4</description>
+		<size>(2,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringII_D</texPath>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringII">
+		<defName>SSRCarpet_FloorCoveringII_E</defName>
+		<label>折纹地毯3x3</label>
+		<description>折纹地毯3x3</description>
+		<size>(3,3)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringII_E</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringII">
+		<defName>SSRCarpet_FloorCoveringII_F</defName>
+		<label>折纹地毯3x4</label>
+		<description>折纹地毯3x4</description>
+		<size>(3,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringII_F</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringII">
+		<defName>SSRCarpet_FloorCoveringII_G</defName>
+		<label>折纹地毯4x4</label>
+		<description>折纹地毯4x4</description>
+		<size>(4,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringII_G</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<!-- 菱形纹路地毯 -->
+	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
+		<defName>SSRCarpet_FloorCoveringIII_A</defName>
+		<label>菱形纹路地毯1x2</label>
+		<description>菱形纹路地毯1x2</description>
+		<size>(1,2)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIII_A</texPath>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
+		<defName>SSRCarpet_FloorCoveringIII_B</defName>
+		<label>菱形纹路地毯2x2</label>
+		<description>菱形纹路地毯2x2</description>
+		<size>(2,2)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIII_B</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
+		<defName>SSRCarpet_FloorCoveringIII_C</defName>
+		<label>菱形纹路地毯2x3</label>
+		<description>菱形纹路地毯2x3</description>
+		<size>(2,3)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIII_C</texPath>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
+		<defName>SSRCarpet_FloorCoveringIII_D</defName>
+		<label>菱形纹路地毯2x4</label>
+		<description>菱形纹路地毯2x4</description>
+		<size>(2,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIII_D</texPath>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
+		<defName>SSRCarpet_FloorCoveringIII_E</defName>
+		<label>菱形纹路地毯3x3</label>
+		<description>菱形纹路地毯3x3</description>
+		<size>(3,3)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIII_E</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
+		<defName>SSRCarpet_FloorCoveringIII_F</defName>
+		<label>菱形纹路地毯3x4</label>
+		<description>菱形纹路地毯3x4</description>
+		<size>(3,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIII_F</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
+		<defName>SSRCarpet_FloorCoveringIII_G</defName>
+		<label>菱形纹路地毯4x4</label>
+		<description>菱形纹路地毯4x4</description>
+		<size>(4,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIII_G</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<!-- 黑底金纹地毯 -->
+	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
+		<defName>SSRCarpet_FloorCoveringIV_A</defName>
+		<label>黑底金纹地毯1x2</label>
+		<description>黑底金纹地毯1x2</description>
+		<size>(1,2)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIV_A</texPath>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
+		<defName>SSRCarpet_FloorCoveringIV_B</defName>
+		<label>黑底金纹地毯2x2</label>
+		<description>黑底金纹地毯2x2</description>
+		<size>(2,2)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIV_B</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
+		<defName>SSRCarpet_FloorCoveringIV_C</defName>
+		<label>黑底金纹地毯2x3</label>
+		<description>黑底金纹地毯2x3</description>
+		<size>(2,3)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIV_C</texPath>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
+		<defName>SSRCarpet_FloorCoveringIV_D</defName>
+		<label>黑底金纹地毯2x4</label>
+		<description>黑底金纹地毯2x4</description>
+		<size>(2,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIV_D</texPath>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
+		<defName>SSRCarpet_FloorCoveringIV_E</defName>
+		<label>黑底金纹地毯3x3</label>
+		<description>黑底金纹地毯3x3</description>
+		<size>(3,3)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIV_E</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
+		<defName>SSRCarpet_FloorCoveringIV_F</defName>
+		<label>黑底金纹地毯3x4</label>
+		<description>黑底金纹地毯3x4</description>
+		<size>(3,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIV_F</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
+		<defName>SSRCarpet_FloorCoveringIV_G</defName>
+		<label>黑底金纹地毯4x4</label>
+		<description>黑底金纹地毯4x4</description>
+		<size>(4,4)</size>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/FloorCoverings/SSRCarpet_FloorCoveringIV_G</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<stuffCategories>
+			<li>Cloth</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 地球仪 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Globe</defName>
+		<label>地球仪</label>
+		<description>地球仪</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<uiIconPath>Things/Building/Furniture/Globe/Globe</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<pathCost>14</pathCost>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<sowTag>Decorative</sowTag>
+			<isEdifice>false</isEdifice>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<placeWorkers>
+			<li>SSR_Furniture.PlaceWorker_OnTable</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+			<texPath>Things/Building/Furniture/Globe/Globe_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="FS_SSR.Generic.TCP_DrawOverlay">
+				<overlay>
+					<texPath>Things/Building/Furniture/Globe/Globe_Top</texPath>
+					<graphicClass>Graphic_Random</graphicClass>
+					<drawSize>(1,1)</drawSize>
+				</overlay>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 小电视 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Television_S</defName>
+		<label>小电视</label>
+		<description>小电视</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Joy/Television/SSR_Television_S</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.5, 0.3, 0.4)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>10000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>14</Mass>
+			<Flammability>1.0</Flammability>
+			<JoyGainFactor>2.1</JoyGainFactor>
+		</statBases>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<pathCost>42</pathCost>
+		<passability>PassThroughOnly</passability>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>5</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>WatchingTelevision</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc4</designationHotKey>
+		<researchPrerequisites>
+			<li>TubeTelevision</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+
+	<!-- 电视 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Television_M</defName>
+		<label>电视</label>
+		<description>电视</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Joy/Television/SSR_Television_M</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(1.6, 0.6, 0.1)</volume>
+				<offset>(0, 0, 0.35)</offset>
+			</shadowData>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>140</Steel>
+			<ComponentIndustrial>16</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToBuild>40000</WorkToBuild>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>8</Mass>
+			<JoyGainFactor>2.5</JoyGainFactor>
+		</statBases>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<size>(2,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<researchPrerequisites>
+			<li>FlatscreenTelevision</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>2~6</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>6</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>WatchingTelevision</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>330</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+	</ThingDef>
+
+	<!-- 大电视 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Television_B</defName>
+		<label>大电视</label>
+		<description>大电视</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Joy/Television/SSR_Television_B</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(2.5, 0.6, 0.1)</volume>
+				<offset>(0, 0, 0.2)</offset>
+			</shadowData>
+			<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>260</Steel>
+			<ComponentIndustrial>22</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToBuild>80000</WorkToBuild>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Mass>10</Mass>
+			<JoyGainFactor>2.8</JoyGainFactor>
+		</statBases>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<size>(3,1)</size>
+		<building>
+			<joyKind>Television</joyKind>
+			<spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+			<boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+			<watchBuildingStandDistanceRange>2~7</watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>7</watchBuildingStandRectWidth>
+			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+			<effectWatching>WatchingTelevision</effectWatching>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>450</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+	</ThingDef>
+
+	<!-- 游戏机 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Game</defName>
+		<label>游戏机</label>
+		<description>游戏机</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Joy/Game/Game</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.7, 0.3)</volume>
+				<offset>(-0.03,0,-0.35)</offset>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>350</MarketValue>
+			<Mass>7.5</Mass>
+			<JoyGainFactor>2.1</JoyGainFactor>
+		</statBases>
+		<building>
+			<paintable>true</paintable>
+			<joyKind>SSR_JoyKind_Game</joyKind>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!-- 桌面办公三件套 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_TabletopOffice</defName>
+		<label>桌面办公三件套</label>
+		<description>桌面办公三件套</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TabletopDecoration/Office</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>350</MarketValue>
+			<Mass>7.5</Mass>
+		</statBases>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<sowTag>Decorative</sowTag>
+			<isEdifice>false</isEdifice>
+		</building>
+		<placeWorkers>
+			<li>SSR_Furniture.PlaceWorker_OnTable</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!-- 时钟 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Clock</defName>
+		<label>时钟</label>
+		<description>时钟</description>
+		<uiIconPath>Things/Building/Furniture/TabletopDecoration/Clock</uiIconPath>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TabletopDecoration/Clock</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>350</MarketValue>
+			<Mass>7.5</Mass>
+		</statBases>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<sowTag>Decorative</sowTag>
+			<isEdifice>false</isEdifice>
+		</building>
+		<placeWorkers>
+			<li>SSR_Furniture.PlaceWorker_OnTable</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!-- 桌面台灯 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_TabletopLamp</defName>
+		<label>桌面台灯</label>
+		<description>桌面台灯</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TabletopDecoration/Lamp</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.7, 0.3)</volume>
+				<offset>(-0.03,0,-0.35)</offset>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>350</MarketValue>
+			<Mass>7.5</Mass>
+		</statBases>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<uiIconPath>Things/Building/Furniture/TabletopDecoration/Lamp_east</uiIconPath>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<clearBuildingArea>false</clearBuildingArea>
+		<building>
+			<sowTag>Decorative</sowTag>
+			<isEdifice>false</isEdifice>
+		</building>
+		<placeWorkers>
+			<li>SSR_Furniture.PlaceWorker_OnTable</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!-- 桌面花盆 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_TabletopFlowerpotI</defName>
+		<label>桌面花盆</label>
+		<description>桌面花盆</description>
+		<designatorDropdown>SSR_TabletopFlowerpot</designatorDropdown>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TabletopDecoration/Flowerpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.7, 0.3)</volume>
+				<offset>(-0.03,0,-0.35)</offset>
+			</shadowData>
+			<drawOffset>(0,0,0.2)</drawOffset>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>350</MarketValue>
+			<Mass>7.5</Mass>
+		</statBases>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<clearBuildingArea>false</clearBuildingArea>
+		<fertility>1.0</fertility>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+			<isEdifice>false</isEdifice>
+		</building>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<placeWorkers>
+			<li>SSR_Furniture.PlaceWorker_OnTable</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_TabletopFlowerpotII</defName>
+		<label>桌面花盆</label>
+		<description>桌面花盆</description>
+		<designatorDropdown>SSR_TabletopFlowerpot</designatorDropdown>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/TabletopDecoration/FlowerpotII</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.7, 0.3)</volume>
+				<offset>(-0.03,0,-0.35)</offset>
+			</shadowData>
+			<drawOffset>(0,0,0.2)</drawOffset>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>350</MarketValue>
+			<Mass>7.5</Mass>
+		</statBases>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.35</fillPercent>
+		<pathCost>50</pathCost>
+		<passability>PassThroughOnly</passability>
+		<clearBuildingArea>false</clearBuildingArea>
+		<fertility>1.0</fertility>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+			<isEdifice>false</isEdifice>
+		</building>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<placeWorkers>
+			<li>SSR_Furniture.PlaceWorker_OnTable</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!-- 模特(女) -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Mannequin_Female</defName>
+		<label>模特(女)</label>
+		<description>模特(女)</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.40</fillPercent>
+		
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<pathCost>14</pathCost>
+		<rotatable>true</rotatable>
+		<size>(1,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<building>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Furniture/Mannequin/SSR_Mannequin_Female</uiIconPath>
+		<graphicData>
+			<drawSize>(2,2)</drawSize>
+			<texPath>Things/Building/Furniture/Mannequin/SSR_Mannequin_Female</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawOffset>(0,0,0.5)</drawOffset>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+	</ThingDef>
+
+	<!-- 模特(男) -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Mannequin_Male</defName>
+		<label>模特(男)</label>
+		<description>模特(男)</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.40</fillPercent>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<pathCost>14</pathCost>
+		<rotatable>true</rotatable>
+		<size>(1,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<building>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Furniture/Mannequin/SSR_Mannequin_Male</uiIconPath>
+		<graphicData>
+			<drawSize>(2,2)</drawSize>
+			<texPath>Things/Building/Furniture/Mannequin/SSR_Mannequin_Male</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawOffset>(0,0,0.5)</drawOffset>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+	</ThingDef>
+
+	<!-- 模特(瘦) -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Mannequin_Thin</defName>
+		<label>模特(瘦)</label>
+		<description>模特(瘦)</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.40</fillPercent>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<pathCost>14</pathCost>
+		<rotatable>true</rotatable>
+		<size>(1,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<building>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Furniture/Mannequin/SSR_Mannequin_Thin</uiIconPath>
+		<graphicData>
+			<drawSize>(2,2)</drawSize>
+			<texPath>Things/Building/Furniture/Mannequin/SSR_Mannequin_Thin</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawOffset>(0,0,0.5)</drawOffset>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+	</ThingDef>
+
+	<!-- 模特(胖) -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Mannequin_Fat</defName>
+		<label>模特(胖)</label>
+		<description>模特(胖)</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.40</fillPercent>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<pathCost>14</pathCost>
+		<rotatable>true</rotatable>
+		<size>(1,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<building>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Furniture/Mannequin/SSR_Mannequin_Fat</uiIconPath>
+		<graphicData>
+			<drawSize>(2,2)</drawSize>
+			<texPath>Things/Building/Furniture/Mannequin/SSR_Mannequin_Fat</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawOffset>(0,0,0.5)</drawOffset>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+	</ThingDef>
+
+	<!-- 台灯 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Lamp</defName>
+		<label>台灯</label>
+		<description>台灯</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.40</fillPercent>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<uiIconPath>Things/Building/Furniture/Lamp/Lamp</uiIconPath>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<canOverlapZones>true</canOverlapZones>
+		<pathCost>14</pathCost>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<building>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+			<texPath>Things/Building/Furniture/Lamp/Lamp_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="FS_SSR.Generic.TCP_DrawOverlay">
+				<overlay>
+					<texPath>Things/Building/Furniture/Lamp/Lamp_Top</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(1,2)</drawSize>
+					<drawOffset>(0,0,0.5)</drawOffset>
+				</overlay>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+				<powerUpgrades>
+					<li>
+						<researchProject>ColoredLights</researchProject>
+						<factor>0.5</factor>
+					</li>
+				</powerUpgrades>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(214,148,94,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 花盆 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_PlantPotI</defName>
+		<label>花盆</label>
+		<description>花盆</description>
+		<designatorDropdown>SSR_Flowerpot</designatorDropdown>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/PlantPot/PlantPot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<fertility>1.0</fertility>
+		<designationHotKey>Misc9</designationHotKey>
+		<uiOrder>2600</uiOrder>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+			<paintable>true</paintable>
+		</building>
+		<rotatable>false</rotatable>
+		<uiIconOffset>(0, -0.05)</uiIconOffset>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_PlantPotII</defName>
+		<label>花盆</label>
+		<description>花盆</description>
+		<designatorDropdown>SSR_Flowerpot</designatorDropdown>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/PlantPot/SSR_PlantPotII</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.20</fillPercent>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>250</WorkToBuild>
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<fertility>1.0</fertility>
+		<designationHotKey>Misc9</designationHotKey>
+		<uiOrder>2600</uiOrder>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<building>
+			<defaultPlantToGrow>Plant_Daylily</defaultPlantToGrow>
+			<sowTag>Decorative</sowTag>
+			<paintable>true</paintable>
+		</building>
+		<rotatable>false</rotatable>
+		<uiIconOffset>(0, -0.05)</uiIconOffset>
+	</ThingDef>
+
+	<!-- 圆凳 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_RoundStool</defName>
+		<label>圆凳</label>
+		<description>圆凳</description>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Chair/RoundStool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>14000</WorkToBuild>
+			<Mass>35</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>7.5</Beauty>
+			<Comfort>1.4</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>110</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2420</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
+	<!-- ====组合式书柜==== -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_SeparateBookcase</defName>
+		<label>独立书柜</label>
+		<description>独立书柜</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bookcase/SeparateBookcase</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>14</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories Inherit="False">
+						<li>Books</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Books</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Bookcase_Lift</defName>
+		<label>书柜(左)</label>
+		<description>书柜(左)</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bookcase/Bookcase_Lift</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>14</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories Inherit="False">
+						<li>Books</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Books</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>20</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Bookcase_Middle</defName>
+		<label>书柜(中)</label>
+		<description>书柜(中)</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bookcase/Bookcase_Middle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>14</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories Inherit="False">
+						<li>Books</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Books</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>20</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_Bookcase_Right</defName>
+		<label>书柜(右)</label>
+		<description>书柜(右)</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bookcase/Bookcase_Right</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>14</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories Inherit="False">
+						<li>Books</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Books</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>20</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 梳妆台 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_StylingStation</defName>
+		<label>梳妆台</label>
+		<description>梳妆台</description>
+		<thingClass>Building_StylingStation</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>240</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Misc/SSR_StylingStation</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(3,0.5,1)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.1,0.1,2.8,0.8)</rect>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<canOverlapZones>false</canOverlapZones>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>true</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<size>(1,1)</size>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Ideology</designationCategory>
+		<costList>
+			<Steel>230</Steel>
+		</costList>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<!-- 电子壁炉 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_ElectricFireplace</defName>
+		<label>电子壁炉</label>
+		<description>电子壁炉</description>
+		<category>Building</category>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<statBases>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>20</Mass>
+		</statBases>
+		<size>(2,1)</size>
+		<selectable>true</selectable>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<uiOrder>2820</uiOrder>
+		<uiIconOffset>(0, -0.04)</uiIconOffset>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+			<li>PlaceWorker_GlowRadius</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+				<powerUpgrades>
+					<li>
+						<researchProject>ColoredLights</researchProject>
+						<factor>0.6</factor>
+					</li>
+				</powerUpgrades>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<canOverlapZones>false</canOverlapZones>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>42</pathCost>
+		<rotatable>true</rotatable>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ElectricFireplace/ElectricFireplace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.3,0.6,0.6)</rect>
+			</damageData>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+</Defs>
