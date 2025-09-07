@@ -147,10 +147,9 @@
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringI">
@@ -164,10 +163,9 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringI">
@@ -181,10 +179,9 @@
 			<drawSize>(2,3)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringI">
@@ -198,10 +195,9 @@
 			<drawSize>(2,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringI">
@@ -215,10 +211,9 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringI">
@@ -232,10 +227,9 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringI">
@@ -249,10 +243,9 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<!-- 折纹地毯 -->
@@ -267,10 +260,9 @@
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringII">
@@ -284,10 +276,9 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringII">
@@ -301,10 +292,9 @@
 			<drawSize>(2,3)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringII">
@@ -318,10 +308,9 @@
 			<drawSize>(2,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringII">
@@ -335,10 +324,9 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringII">
@@ -352,10 +340,9 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringII">
@@ -369,10 +356,9 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<!-- 菱形纹路地毯 -->
@@ -387,10 +373,9 @@
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
@@ -404,10 +389,9 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
@@ -421,10 +405,9 @@
 			<drawSize>(2,3)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
@@ -438,10 +421,9 @@
 			<drawSize>(2,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
@@ -455,10 +437,9 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
@@ -472,10 +453,9 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIII">
@@ -489,10 +469,9 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<!-- 黑底金纹地毯 -->
@@ -507,10 +486,9 @@
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
@@ -524,10 +502,9 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
@@ -541,10 +518,9 @@
 			<drawSize>(2,3)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
@@ -558,10 +534,9 @@
 			<drawSize>(2,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
@@ -575,10 +550,9 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
@@ -592,10 +566,9 @@
 			<drawSize>(3,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="SSRBuildingFloorCoveringIV">
@@ -609,10 +582,9 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<stuffCategories>
-			<li>Cloth</li>
-		</stuffCategories>
-		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Cloth>100</Cloth>
+		</costList>
 	</ThingDef>
 
 </Defs>
