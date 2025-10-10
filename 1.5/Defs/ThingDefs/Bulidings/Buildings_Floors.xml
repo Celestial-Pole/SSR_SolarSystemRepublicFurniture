@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- 地板——地毯 -->
-	<TerrainDef Abstract="True" ParentName="SSRFloorBase" Name="SSRCarpetFloorBase">
+	<TerrainDef Abstract="True" ParentName="SSR_FloorBase" Name="SSRCarpetFloorBase">
 		<designatorDropdown>SSRFloor_Carpet</designatorDropdown>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<isPaintable>true</isPaintable>
