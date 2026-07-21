@@ -47,7 +47,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Chair/OfficeChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.2,1.2)</drawSize>
 			<damageData>
 				<rectN>(0,0,1,0.703125)</rectN>
 				<rectS>(0.09375,0,0.84375,1)</rectS>
@@ -133,7 +134,7 @@
 			<li>SSR_Furniture.PlaceWorker_OnTable</li>
 		</placeWorkers>
 	</ThingDef>
-	
+
 	<!-- ====组合式书柜==== -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
@@ -143,12 +144,13 @@
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Bookcase/SeparateBookcase</texPath>
+			<shaderType>CutoutComplex</shaderType>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawSize>(4.4,4.4)</drawSize>
+			<!--<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
 			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
 			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
-			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>-->
 			<damageData>
 				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
 				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
@@ -491,7 +493,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/SSR_Bed/SofaBed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.1,2.1)</drawSize>
 			<damageData>
 				<rect>(0,0.05,1,1.95)</rect>
 			</damageData>
@@ -531,7 +534,7 @@
 			<texPath>Things/Building/Furniture/SSR_Bed/Bed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1,2)</drawSize>
+			<drawSize>(2.1,2.1)</drawSize>
 			<damageData>
 				<rect>(0,0.05,1,1.95)</rect>
 			</damageData>
@@ -570,7 +573,7 @@
 			<texPath>Things/Building/Furniture/SSR_Bed/DoubleBed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(2.05,2.05)</drawSize>
+			<drawSize>(2.28,2.28)</drawSize>
 			<damageData>
 				<rect>(0,0.05,2,1.95)</rect>
 			</damageData>
@@ -616,7 +619,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/SSR_Bed/Crib</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.27,1.27)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
 				<volume>(0.8,0.4,0.9)</volume>
 			</shadowData>
@@ -635,7 +639,8 @@
 		<costStuffCount>25</costStuffCount>
 		<uiOrder>2022</uiOrder>
 		<building>
-			<bed_maxBodySize>0.25</bed_maxBodySize>			<!-- Larger than HumanlikeBaby.BodySizeFactor but less than HumanlikeChild.BodySizeFactor. -->
+			<bed_maxBodySize>0.25</bed_maxBodySize>
+			<!-- Larger than HumanlikeBaby.BodySizeFactor but less than HumanlikeChild.BodySizeFactor. -->
 			<bed_showSleeperBody>True</bed_showSleeperBody>
 			<bed_emptyCountsForBarracks>false</bed_emptyCountsForBarracks>
 			<bed_crib>True</bed_crib>
@@ -747,18 +752,19 @@
 	<!-- ====组合式衣柜==== -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_SeparateWardrobe</defName>
-		<label>独立衣柜</label>
-		<description>独立衣柜</description>
+		<defName>SSR_SeparateWardrobeA</defName>
+		<label>独立衣柜A</label>
+		<description>独立衣柜A</description>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Furniture/Wardrobe/SeparateWardrobe</texPath>
+			<texPath>Things/Building/Furniture/Wardrobe/SSR_SeparateWardrobeA</texPath>
+			<shaderType>CutoutComplex</shaderType>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawSize>(4.4,4.4)</drawSize>
+			<!--<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
 			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
 			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
-			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>-->
 			<damageData>
 				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
 				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
@@ -788,6 +794,166 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_SeparateWardrobeB</defName>
+		<label>独立衣柜B</label>
+		<description>独立衣柜B</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Wardrobe/SSR_SeparateWardrobeB</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.4,4.4)</drawSize>
+			<!--<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>-->
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>15</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Apparel</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<designationHotKey>Misc5</designationHotKey>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<surfaceType>Item</surfaceType>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<Comfort>0.04</Comfort>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				<maxDistance>4</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_SeparateWardrobeBigThree</defName>
+		<label>独立衣柜（1x3）</label>
+		<description>独立衣柜</description>
+		<thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Wardrobe/SSR_SeparateWardrobeBigThree</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4.4,4.4)</drawSize>
+			<!--<drawOffsetSouth>(0,0,0.45)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.45)</drawOffsetNorth>
+			<drawOffsetEast>(0,0,0.45)</drawOffsetEast>
+			<drawOffsetWest>(0,0,0.45)</drawOffsetWest>-->
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.65</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<castEdgeShadows>true</castEdgeShadows>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<statBases>
+			<Beauty>15</Beauty>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>8</Mass>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,1)</size>
 		<building>
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
@@ -1073,7 +1239,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Chair/Chair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.2,1.2)</drawSize>
 			<damageData>
 				<rectN>(0,0,1,0.703125)</rectN>
 				<rectS>(0.09375,0,0.84375,1)</rectS>
@@ -1125,7 +1292,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Chair/RoundStool</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.2,1.2)</drawSize>
 			<damageData>
 				<rectN>(0,0,1,0.703125)</rectN>
 				<rectS>(0.09375,0,0.84375,1)</rectS>
@@ -1175,8 +1343,9 @@
 		<description>方形小餐桌</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Table/SquareTable1x1</texPath>
+			<shaderType>CutoutComplex</shaderType>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(2.26,2.26)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1207,8 +1376,9 @@
 		<description>圆形小餐桌</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Table/RotundityTable1x1</texPath>
+			<shaderType>CutoutComplex</shaderType>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(2.26,2.26)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1239,6 +1409,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_A_Corner</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1269,6 +1440,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_A_Edge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1299,6 +1471,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_A_Centre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1331,6 +1504,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_B_Corner</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1361,6 +1535,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_BB_Corner</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1391,6 +1566,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_B_Edge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1421,6 +1597,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_A_Centre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1456,7 +1633,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Chair/SofaChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.01,1.01)</drawSize>
 			<damageData>
 				<rectN>(0,0,1,0.703125)</rectN>
 				<rectS>(0.09375,0,0.84375,1)</rectS>
@@ -1819,7 +1997,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/EndTable/EndTable1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.25,2.25)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1848,7 +2027,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/EndTable/EndTableR1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.25,2.25)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1879,7 +2059,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/EndTable/EndTable1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.05,3.05)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1908,7 +2089,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/EndTable/EndTableR1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.05,3.05)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -1939,6 +2121,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/EndTable/EndTable1x3</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1968,6 +2151,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/EndTable/EndTableR1x3</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -1996,6 +2180,19 @@
 		<defName>SSR_ElectricFireplace</defName>
 		<label>电子壁炉</label>
 		<description>电子壁炉</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/ElectricFireplace/ElectricFireplace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.55, 0.35, 0.3)</volume>
+				<offset>(0, 0, -0.28)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.3,0.6,0.6)</rect>
+			</damageData>
+			<drawSize>(3.06,3.06)</drawSize>
+		</graphicData>
 		<category>Building</category>
 		<tickerType>Normal</tickerType>
 		<drawerType>RealtimeOnly</drawerType>
@@ -2045,25 +2242,13 @@
 			</li>
 		</comps>
 		<canOverlapZones>false</canOverlapZones>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>Pawn</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>42</pathCost>
 		<rotatable>true</rotatable>
 		<researchPrerequisites>
 			<li>ComplexFurniture</li>
 		</researchPrerequisites>
-		<graphicData>
-			<texPath>Things/Building/Furniture/ElectricFireplace/ElectricFireplace</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shadowData>
-				<volume>(0.55, 0.35, 0.3)</volume>
-				<offset>(0, 0, -0.28)</offset>
-			</shadowData>
-			<damageData>
-				<rect>(0.2,0.3,0.6,0.6)</rect>
-			</damageData>
-			<drawSize>(2,1)</drawSize>
-		</graphicData>
 	</ThingDef>
 
 	<!-- 小电视 -->
@@ -2075,6 +2260,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Joy/Television/SSR_Television_S</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.2,1.2)</drawSize>
 			<shadowData>
 				<volume>(0.5, 0.3, 0.4)</volume>
 			</shadowData>
@@ -2144,7 +2330,7 @@
 				<volume>(1.6, 0.6, 0.1)</volume>
 				<offset>(0, 0, 0.35)</offset>
 			</shadowData>
-			<drawSize>(2,1)</drawSize>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
@@ -2212,7 +2398,7 @@
 				<volume>(2.5, 0.6, 0.1)</volume>
 				<offset>(0, 0, 0.2)</offset>
 			</shadowData>
-			<drawSize>(3,1)</drawSize>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
@@ -2274,7 +2460,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/SchoolTable/SchoolTable1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.25,2.25)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -2356,7 +2543,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/SchoolTable/SchoolTable1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.05,3.05)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -2866,7 +3054,7 @@
 		<pathCost>14</pathCost>
 		<rotatable>false</rotatable>
 		<size>(1,1)</size>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<building>
 			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
 			<destroyShakeAmount>0</destroyShakeAmount>
@@ -2875,7 +3063,7 @@
 			<li>ComplexFurniture</li>
 		</researchPrerequisites>
 		<graphicData>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(2.9,2.9)</drawSize>
 			<texPath>Things/Building/Furniture/Lamp/Lamp_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -2884,8 +3072,8 @@
 				<overlay>
 					<texPath>Things/Building/Furniture/Lamp/Lamp_Top</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(1,2)</drawSize>
-					<drawOffset>(0,0,0.5)</drawOffset>
+					<drawSize>(2.9,2.9)</drawSize>
+					<drawOffset>(0,0,0)</drawOffset>
 				</overlay>
 			</li>
 			<li Class="CompProperties_Power">
@@ -2942,7 +3130,7 @@
 			<li>ComplexFurniture</li>
 		</researchPrerequisites>
 		<graphicData>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(2.9,2.9)</drawSize>
 			<texPath>Things/Building/Furniture/Flag/Flag_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
@@ -2952,8 +3140,8 @@
 				<overlay>
 					<texPath>Things/Building/Furniture/Flag/Flag_Top</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
-					<drawSize>(1,2)</drawSize>
-					<drawOffset>(0,0,0.5)</drawOffset>
+					<drawSize>(2.9,2.9)</drawSize>
+					<drawOffset>(0,0,0)</drawOffset>
 				</overlay>
 			</li>
 		</comps>
