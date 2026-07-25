@@ -1335,6 +1335,57 @@
 		</building>
 	</ThingDef>
 
+	<!--新椅子-->
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+		<defName>SSR_ChairB</defName>
+		<label>椅子</label>
+		<description>椅子</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Chair/SSR_ChairB</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.4,1.4)</drawSize>
+			<damageData>
+				<rectN>(0,0,1,0.703125)</rectN>
+				<rectS>(0.09375,0,0.84375,1)</rectS>
+				<rectE>(0,0,0.84375,0.625)</rectE>
+				<rectW>(0.15625,0,0.84375,0.625)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.3, 0.33, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<uiIconScale>0.9</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>240</MaxHitPoints>
+			<WorkToBuild>14000</WorkToBuild>
+			<Mass>35</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>1.2</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<costStuffCount>110</costStuffCount>
+		<pathCost>30</pathCost>
+		<fillPercent>0.40</fillPercent>
+		<designationHotKey>Misc8</designationHotKey>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<uiOrder>2420</uiOrder>
+		<building>
+			<isSittable>true</isSittable>
+			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
+		</building>
+	</ThingDef>
+
 	<!-- 方形小餐桌 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
@@ -2627,9 +2678,12 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Blackboard/Blackboard</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
 			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
-			<drawSize>(3,2)</drawSize>
+			<drawOffsetEast>(0.25,0,0)</drawOffsetEast>
+			<drawOffsetWest>(-0.25,0,0)</drawOffsetWest>
+			<drawSize>(3.07,3.07)</drawSize>
 			<damageData>
 				<rectN>(0.1, 0.3, 1.8, 0.5)</rectN>
 				<rectS>(0.1, 0.3, 1.8, 0.5)</rectS>
@@ -2694,11 +2748,12 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Blackboard/WallMountedBlackboard</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
 			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
-			<drawOffsetEast>(0.3,0,0)</drawOffsetEast>
-			<drawOffsetWest>(-0.3,0,0)</drawOffsetWest>
-			<drawSize>(3,1)</drawSize>
+			<drawOffsetEast>(0.32,0,0)</drawOffsetEast>
+			<drawOffsetWest>(-0.32,0,0)</drawOffsetWest>
+			<drawSize>(3.07,3.07)</drawSize>
 			<damageData>
 				<rectN>(0.1, 0.3, 1.8, 0.5)</rectN>
 				<rectS>(0.1, 0.3, 1.8, 0.5)</rectS>

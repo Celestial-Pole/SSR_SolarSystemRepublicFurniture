@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--装饰-->
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Furniture_FakeBonsai</defName>
+		<label>假盆栽</label>
+		<description>一盆用木头精心雕刻并染色的假盆景。它不需要浇水，也永远不会枯萎，那一抹常驻的绿色能为房间带来一丝生机。</description>
+
+		<graphicData>
+			<!-- 请替换为你的盆景贴图路径 -->
+			<texPath>Things/Building/Furniture/SSR_Furniture_FakeBonsai/SSR_Furniture_FakeBonsai</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.8,1.8)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.3, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<uiOrder>2610</uiOrder>
+		<fillPercent>0.40</fillPercent>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<!-- 小人可以踩过去，但会稍微减速 -->
+		<pathCost>30</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<!-- 建造很快 -->
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+			<!-- 木头做的，易燃 -->
+			<Beauty>8</Beauty>
+			<!-- 提供 8 点固定美观度，略好于原版的普通盆栽 -->
+		</statBases>
+
+		<!-- 消耗 15 个木头 -->
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+
+	</ThingDef>
+
+</Defs>
