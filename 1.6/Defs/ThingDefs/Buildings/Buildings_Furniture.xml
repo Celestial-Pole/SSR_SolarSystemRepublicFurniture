@@ -12,7 +12,8 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/Desk/Desk</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4.15,4.15)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -32,7 +33,7 @@
 		</statBases>
 		<size>(3,1)</size>
 		<costStuffCount>100</costStuffCount>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<building>
 			<buildingSizeCategory>Medium</buildingSizeCategory>
 		</building>
@@ -662,6 +663,8 @@
 		<uiOrder>2060</uiOrder>
 		<graphicData>
 			<texPath>Things/Building/Furniture/BedsideTable/BedsideTable</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.23,2.23)</drawSize>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
@@ -713,7 +716,8 @@
 		<graphicData>
 			<texPath>Things/Building/Misc/SSR_StylingStation</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.31,2.31)</drawSize>
 			<shadowData>
 				<volume>(3,0.5,1)</volume>
 			</shadowData>
@@ -724,6 +728,7 @@
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<canOverlapZones>false</canOverlapZones>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
@@ -731,7 +736,7 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<hasInteractionCell>true</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
 		<size>(1,1)</size>
 		<researchPrerequisites>
 			<li>ComplexFurniture</li>
@@ -2173,7 +2178,7 @@
 			<texPath>Things/Building/Furniture/EndTable/EndTable1x3</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(3,1)</drawSize>
+			<drawSize>(4.15,4.15)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -2980,13 +2985,14 @@
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/TabletopDecoration/Flowerpot</texPath>
+			<shaderType>CutoutComplex</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.7, 0.3)</volume>
 				<offset>(-0.03,0,-0.35)</offset>
 			</shadowData>
-			<drawOffset>(0,0,0.2)</drawOffset>
+			<!--<drawOffset>(0,0,0.2)</drawOffset>-->
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
@@ -3036,13 +3042,14 @@
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/TabletopDecoration/FlowerpotII</texPath>
+			<shaderType>CutoutComplex</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.7, 0.3)</volume>
 				<offset>(-0.03,0,-0.35)</offset>
 			</shadowData>
-			<drawOffset>(0,0,0.2)</drawOffset>
+			<!--<drawOffset>(0,0,0.2)</drawOffset>-->
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
@@ -3212,6 +3219,8 @@
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PlantPot/PlantPot</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.05,1.05)</drawSize>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.55, 0.35, 0.3)</volume>
@@ -3260,6 +3269,8 @@
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Furniture/PlantPot/SSR_PlantPotII</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.05,1.05)</drawSize>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shadowData>
 				<volume>(0.55, 0.35, 0.3)</volume>
@@ -3310,7 +3321,7 @@
 			<texPath>Things/Building/Furniture/Joy/Game/Game</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(2.45,2.45)</drawSize>
 			<shadowData>
 				<volume>(0.3, 0.7, 0.3)</volume>
 				<offset>(-0.03,0,-0.35)</offset>
