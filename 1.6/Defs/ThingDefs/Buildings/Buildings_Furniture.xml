@@ -6,7 +6,7 @@
 	<!-- 办公桌 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_Desk</defName>
+		<defName>SSR_Building_Desk</defName>
 		<label>办公桌</label>
 		<description>办公桌</description>
 		<graphicData>
@@ -45,7 +45,7 @@
 	<!-- 办公椅 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_OfficeChair</defName>
+		<defName>SSR_Building_OfficeChair</defName>
 		<label>办公椅</label>
 		<description>办公椅</description>
 		<graphicData>
@@ -100,7 +100,7 @@
 	<!-- 电脑 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_TabletopOffice</defName>
+		<defName>SSR_Building_TabletopOffice</defName>
 		<label>电脑</label>
 		<description>电脑</description>
 		<graphicData>
@@ -148,7 +148,7 @@
 	<!-- ====组合式书柜==== -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_SeparateBookcase</defName>
+		<defName>SSR_Building_SeparateBookcase</defName>
 		<label>独立书柜</label>
 		<description>独立书柜</description>
 		<thingClass>Building_Storage</thingClass>
@@ -238,7 +238,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Bookcase_Lift</defName>
+		<defName>SSR_Building_Bookcase_Lift</defName>
 		<label>书柜(左)</label>
 		<description>书柜(左)</description>
 		<thingClass>Building_Storage</thingClass>
@@ -327,7 +327,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Bookcase_Middle</defName>
+		<defName>SSR_Building_Bookcase_Middle</defName>
 		<label>书柜(中)</label>
 		<description>书柜(中)</description>
 		<thingClass>Building_Storage</thingClass>
@@ -416,7 +416,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Bookcase_Right</defName>
+		<defName>SSR_Building_Bookcase_Right</defName>
 		<label>书柜(右)</label>
 		<description>书柜(右)</description>
 		<thingClass>Building_Storage</thingClass>
@@ -509,7 +509,7 @@
 	<!-- 沙发床 -->
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>SSR_SofaBed</defName>
+		<defName>SSR_Building_SofaBed</defName>
 		<label>沙发床</label>
 		<description>沙发床</description>
 		<graphicData>
@@ -551,7 +551,7 @@
 	<!-- 床 -->
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>SSR_Bed</defName>
+		<defName>SSR_Building_Bed</defName>
 		<label>床</label>
 		<description>床</description>
 		<graphicData>
@@ -592,7 +592,7 @@
 	<!-- 双人床 -->
 
 	<ThingDef ParentName="BasicBedBase">
-		<defName>SSR_DoubleBed</defName>
+		<defName>SSR_Building_DoubleBed</defName>
 		<label>双人床</label>
 		<description>双人床</description>
 		<graphicData>
@@ -634,7 +634,7 @@
 	<!-- 婴儿床 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_SansComfortBedBase">
-		<defName>SSR_Crib</defName>
+		<defName>SSR_Building_Crib</defName>
 		<label>婴儿床</label>
 		<description>婴儿床</description>
 		<comps>
@@ -684,7 +684,7 @@
 	<!-- 床头柜 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableBase">
-		<defName>SSR_BedsideTable</defName>
+		<defName>SSR_Building_BedsideTable</defName>
 		<label>床头柜</label>
 		<description>床头柜</description>
 		<surfaceType>Item</surfaceType>
@@ -730,7 +730,7 @@
 	<!-- 梳妆台 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_StylingStation</defName>
+		<defName>SSR_Building_StylingStation</defName>
 		<label>梳妆台</label>
 		<description>梳妆台</description>
 		<thingClass>Building_StylingStation</thingClass>
@@ -781,7 +781,7 @@
 	<!-- ====组合式衣柜==== -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_SeparateWardrobeA</defName>
+		<defName>SSR_Building_SeparateWardrobeA</defName>
 		<label>独立衣柜A</label>
 		<description>独立衣柜A</description>
 		<thingClass>Building_Storage</thingClass>
@@ -861,7 +861,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_SeparateWardrobeB</defName>
+		<defName>SSR_Building_SeparateWardrobeB</defName>
 		<label>独立衣柜B</label>
 		<description>独立衣柜B</description>
 		<thingClass>Building_Storage</thingClass>
@@ -941,7 +941,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_SeparateWardrobeBigThree</defName>
+		<defName>SSR_Building_SeparateWardrobeBigThree</defName>
 		<label>独立衣柜（1x3）</label>
 		<description>独立衣柜</description>
 		<thingClass>Building_Storage</thingClass>
@@ -1021,7 +1021,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Wardrobe_Lift</defName>
+		<defName>SSR_Building_Wardrobe_Lift</defName>
 		<label>衣柜(左)</label>
 		<description>衣柜(左)</description>
 		<thingClass>Building_Storage</thingClass>
@@ -1100,7 +1100,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Wardrobe_Middle</defName>
+		<defName>SSR_Building_Wardrobe_Middle</defName>
 		<label>衣柜(中)</label>
 		<description>衣柜(中)</description>
 		<thingClass>Building_Storage</thingClass>
@@ -1179,7 +1179,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Wardrobe_Right</defName>
+		<defName>SSR_Building_Wardrobe_Right</defName>
 		<label>衣柜(右)</label>
 		<description>衣柜(右)</description>
 		<thingClass>Building_Storage</thingClass>
@@ -1262,7 +1262,7 @@
 	<!-- 椅子 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Chair</defName>
+		<defName>SSR_Building_Chair</defName>
 		<label>椅子</label>
 		<description>椅子</description>
 		<graphicData>
@@ -1314,7 +1314,7 @@
 	<!-- 吧台椅 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_RoundStool</defName>
+		<defName>SSR_Building_RoundStool</defName>
 		<label>吧台椅</label>
 		<description>吧台椅</description>
 		<rotatable>false</rotatable>
@@ -1366,7 +1366,7 @@
 
 	<!--新椅子-->
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_ChairB</defName>
+		<defName>SSR_Building_ChairB</defName>
 		<label>椅子</label>
 		<description>椅子</description>
 		<graphicData>
@@ -1418,7 +1418,7 @@
 	<!-- 方形小餐桌 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_SquareTable1x1c</defName>
+		<defName>SSR_Building_SquareTable1x1c</defName>
 		<label>方形小餐桌</label>
 		<description>方形小餐桌</description>
 		<graphicData>
@@ -1454,7 +1454,7 @@
 	<!-- 圆形小餐桌 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_RotundityTable1x1c</defName>
+		<defName>SSR_Building_RotundityTable1x1c</defName>
 		<label>圆形小餐桌</label>
 		<description>圆形小餐桌</description>
 		<graphicData>
@@ -1490,7 +1490,7 @@
 	<!-- ====组合式桌子==== -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_Table_A_Corner</defName>
+		<defName>SSR_Building_Table_A_Corner</defName>
 		<label>组合式桌子(角)</label>
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_A_Corner</texPath>
@@ -1524,7 +1524,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_Table_A_Edge</defName>
+		<defName>SSR_Building_Table_A_Edge</defName>
 		<label>组合式桌子(边)</label>
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_A_Edge</texPath>
@@ -1558,7 +1558,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_Table_A_Centre</defName>
+		<defName>SSR_Building_Table_A_Centre</defName>
 		<label>组合式桌子(中心)</label>
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_A_Centre</texPath>
@@ -1594,7 +1594,7 @@
 	<!-- ====组合式餐桌==== -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_Table_B_Corner</defName>
+		<defName>SSR_Building_Table_B_Corner</defName>
 		<label>组合式餐桌(角)样式1</label>
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_B_Corner</texPath>
@@ -1628,7 +1628,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_Table_BB_Corner</defName>
+		<defName>SSR_Building_Table_BB_Corner</defName>
 		<label>组合式餐桌(角)样式2</label>
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_BB_Corner</texPath>
@@ -1662,7 +1662,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_Table_B_Edge</defName>
+		<defName>SSR_Building_Table_B_Edge</defName>
 		<label>组合式餐桌(边)</label>
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_B_Edge</texPath>
@@ -1696,7 +1696,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_Table_B_Centre</defName>
+		<defName>SSR_Building_Table_B_Centre</defName>
 		<label>组合式餐桌(中心)</label>
 		<graphicData>
 			<texPath>Things/Building/Furniture/ModularTable/Table_A_Centre</texPath>
@@ -1734,7 +1734,7 @@
 	<!-- 沙发椅 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_SofaChair</defName>
+		<defName>SSR_Building_SofaChair</defName>
 		<label>沙发椅</label>
 		<description>沙发椅</description>
 		<graphicData>
@@ -1788,7 +1788,7 @@
 	<!-- 组合式沙发(A) -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Couch_A_Lift</defName>
+		<defName>SSR_Building_Couch_A_Lift</defName>
 		<label>组合式沙发(A)左侧</label>
 		<description>组合式沙发(A)左侧</description>
 		<graphicData>
@@ -1839,7 +1839,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Couch_A_Middle</defName>
+		<defName>SSR_Building_Couch_A_Middle</defName>
 		<label>组合式沙发(A)中间</label>
 		<description>组合式沙发(A)中间</description>
 		<graphicData>
@@ -1890,7 +1890,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Couch_A_Right</defName>
+		<defName>SSR_Building_Couch_A_Right</defName>
 		<label>组合式沙发(A)右侧</label>
 		<description>组合式沙发(A)右侧</description>
 		<graphicData>
@@ -1943,7 +1943,7 @@
 	<!-- 组合式沙发(B) -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Couch_B_Lift</defName>
+		<defName>SSR_Building_Couch_B_Lift</defName>
 		<label>组合式沙发(B)左侧</label>
 		<description>组合式沙发(B)左侧</description>
 		<graphicData>
@@ -1994,7 +1994,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Couch_B_Middle</defName>
+		<defName>SSR_Building_Couch_B_Middle</defName>
 		<label>组合式沙发(B)中间</label>
 		<description>组合式沙发(B)中间</description>
 		<graphicData>
@@ -2045,7 +2045,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_Couch_B_Right</defName>
+		<defName>SSR_Building_Couch_B_Right</defName>
 		<label>组合式沙发(B)右侧</label>
 		<description>组合式沙发(B)右侧</description>
 		<graphicData>
@@ -2098,7 +2098,7 @@
 	<!-- 茶几1x1 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_EndTable1x1c</defName>
+		<defName>SSR_Building_EndTable1x1c</defName>
 		<label>茶几(方角)1x1</label>
 		<description>茶几(方角)1x1</description>
 		<graphicData>
@@ -2131,7 +2131,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_EndTableR1x1c</defName>
+		<defName>SSR_Building_EndTableR1x1c</defName>
 		<label>茶几(圆角)1x1</label>
 		<description>茶几(圆角)1x1</description>
 		<graphicData>
@@ -2166,7 +2166,7 @@
 	<!-- 茶几1x2 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_EndTable1x2c</defName>
+		<defName>SSR_Building_EndTable1x2c</defName>
 		<label>茶几(方角)1x2</label>
 		<description>茶几(方角)1x2</description>
 		<graphicData>
@@ -2199,7 +2199,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_EndTableR1x2c</defName>
+		<defName>SSR_Building_EndTableR1x2c</defName>
 		<label>茶几(圆角)1x2</label>
 		<description>茶几(圆角)1x2</description>
 		<graphicData>
@@ -2234,7 +2234,7 @@
 	<!-- 茶几1x3 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_EndTable1x3c</defName>
+		<defName>SSR_Building_EndTable1x3c</defName>
 		<label>茶几(方角)1x3</label>
 		<description>茶几(方角)1x3</description>
 		<graphicData>
@@ -2267,7 +2267,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
-		<defName>SSR_EndTableR1x3c</defName>
+		<defName>SSR_Building_EndTableR1x3c</defName>
 		<label>茶几(圆角)1x3</label>
 		<description>茶几(圆角)1x3</description>
 		<graphicData>
@@ -2302,7 +2302,7 @@
 	<!-- 电子壁炉 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_ElectricFireplace</defName>
+		<defName>SSR_Building_ElectricFireplace</defName>
 		<label>电子壁炉</label>
 		<description>电子壁炉</description>
 		<graphicData>
@@ -2376,7 +2376,7 @@
 	<!-- 小电视 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Television_S</defName>
+		<defName>SSR_Building_Television_S</defName>
 		<label>小电视</label>
 		<description>小电视</description>
 		<graphicData>
@@ -2439,7 +2439,7 @@
 	<!-- 电视 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Television_M</defName>
+		<defName>SSR_Building_Television_M</defName>
 		<label>电视</label>
 		<description>电视</description>
 		<graphicData>
@@ -2504,7 +2504,7 @@
 	<!-- 大电视 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Television_B</defName>
+		<defName>SSR_Building_Television_B</defName>
 		<label>大电视</label>
 		<description>大电视</description>
 		<graphicData>
@@ -2570,7 +2570,7 @@
 	<!-- 课桌1x1 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_SchoolTable1x1c</defName>
+		<defName>SSR_Building_SchoolTable1x1c</defName>
 		<label>课桌1x1</label>
 		<description>A desk where adults can teach lessons to children.</description>
 		<graphicData>
@@ -2650,7 +2650,7 @@
 	<!-- 课桌1x2 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_SchoolTable1x2c</defName>
+		<defName>SSR_Building_SchoolTable1x2c</defName>
 		<label>课桌1x2</label>
 		<description>A desk where adults can teach lessons to children.</description>
 		<graphicData>
@@ -2731,7 +2731,7 @@
 	<!-- 黑板 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Blackboard</defName>
+		<defName>SSR_Building_Blackboard</defName>
 		<label>黑板</label>
 		<description>黑板</description>
 		<graphicData>
@@ -2797,7 +2797,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_WallMountedBlackboard</defName>
+		<defName>SSR_Building_WallMountedBlackboard</defName>
 		<label>黑板（挂式）</label>
 		<description>黑板（挂式）</description>
 		<size>(3,1)</size>
@@ -2870,7 +2870,7 @@
 	<!-- 地球仪 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Globe</defName>
+		<defName>SSR_Building_Globe</defName>
 		<label>地球仪</label>
 		<description>地球仪</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -2928,7 +2928,7 @@
 	<!-- 时钟 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Clock</defName>
+		<defName>SSR_Building_Clock</defName>
 		<label>时钟</label>
 		<description>时钟</description>
 		<uiIconPath>Things/Building/Furniture/TabletopDecoration/Clock</uiIconPath>
@@ -2974,7 +2974,7 @@
 	<!-- 桌面台灯 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_TabletopLamp</defName>
+		<defName>SSR_Building_TabletopLamp</defName>
 		<label>桌面台灯</label>
 		<description>桌面台灯</description>
 		<graphicData>
@@ -3023,7 +3023,7 @@
 	<!-- 桌面花盆 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_TabletopFlowerpotI</defName>
+		<defName>SSR_Building_TabletopFlowerpotI</defName>
 		<label>桌面花盆</label>
 		<description>桌面花盆</description>
 		<designatorDropdown>SSR_TabletopFlowerpot</designatorDropdown>
@@ -3080,7 +3080,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_TabletopFlowerpotII</defName>
+		<defName>SSR_Building_TabletopFlowerpotII</defName>
 		<label>桌面花盆</label>
 		<description>桌面花盆</description>
 		<designatorDropdown>SSR_TabletopFlowerpot</designatorDropdown>
@@ -3139,7 +3139,7 @@
 	<!-- 落地灯 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Lamp</defName>
+		<defName>SSR_Building_Lamp</defName>
 		<label>落地灯</label>
 		<description>落地灯</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -3206,7 +3206,7 @@
 	<!-- 旗帜 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_EFFlag</defName>
+		<defName>SSR_Building_EFFlag</defName>
 		<label>旗帜</label>
 		<description>旗帜</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -3259,7 +3259,7 @@
 	<!-- 花盆 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_PlantPotI</defName>
+		<defName>SSR_Building_PlantPotI</defName>
 		<label>花盆</label>
 		<description>花盆</description>
 		<designatorDropdown>SSR_Flowerpot</designatorDropdown>
@@ -3312,7 +3312,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
-		<defName>SSR_PlantPotII</defName>
+		<defName>SSR_Building_PlantPotII</defName>
 		<label>花盆</label>
 		<description>花盆</description>
 		<designatorDropdown>SSR_Flowerpot</designatorDropdown>
@@ -3367,11 +3367,11 @@
 	<!-- 游戏机 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Game</defName>
+		<defName>SSR_Building_ArcadeMachine</defName>
 		<label>游戏机</label>
 		<description>游戏机</description>
 		<graphicData>
-			<texPath>Things/Building/Furniture/Joy/Game/Game</texPath>
+			<texPath>Things/Building/Furniture/Joy/ArcadeMachine/ArcadeMachine</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.45,2.45)</drawSize>
