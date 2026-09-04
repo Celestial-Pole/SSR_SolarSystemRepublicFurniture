@@ -3147,6 +3147,7 @@
 		<fillPercent>0.40</fillPercent>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<uiIconPath>Things/Building/Furniture/Lamp/Lamp</uiIconPath>
+		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>2000</WorkToBuild>
@@ -3213,6 +3214,7 @@
 		<fillPercent>0.40</fillPercent>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<uiIconPath>Things/Building/Furniture/Flag/Flag</uiIconPath>
+		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
 			<WorkToBuild>2000</WorkToBuild>
@@ -3381,6 +3383,7 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<hasInteractionCell>true</hasInteractionCell>
 		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<minifiedDef>MinifiedThing</minifiedDef>
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
