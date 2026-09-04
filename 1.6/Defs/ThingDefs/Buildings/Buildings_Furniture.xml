@@ -2597,7 +2597,7 @@
 			<li>(0,0,-1)</li>
 		</multipleInteractionCellOffsets>
 		<descriptionHyperlinks>
-			<ThingDef>SSR_Blackboard</ThingDef>
+			<ThingDef>SSR_Building_Blackboard</ThingDef>
 		</descriptionHyperlinks>
 		<passability>PassThroughOnly</passability>
 		<canOverlapZones>false</canOverlapZones>
@@ -2630,7 +2630,8 @@
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
-					<li>SSR_Blackboard</li>
+					<li>SSR_Building_Blackboard</li>
+					<li>SSR_Building_WallMountedBlackboard</li>
 				</linkableFacilities>
 			</li>
 			<li Class="CompProperties_StatEntry">
@@ -2678,7 +2679,7 @@
 			<li>(0,0,-1)</li>
 		</multipleInteractionCellOffsets>
 		<descriptionHyperlinks>
-			<ThingDef>SSR_Blackboard</ThingDef>
+			<ThingDef>SSR_Building_Blackboard</ThingDef>
 		</descriptionHyperlinks>
 		<passability>PassThroughOnly</passability>
 		<canOverlapZones>false</canOverlapZones>
@@ -2711,7 +2712,8 @@
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
-					<li>SSR_Blackboard</li>
+					<li>SSR_Building_Blackboard</li>
+					<li>SSR_Building_WallMountedBlackboard</li>
 				</linkableFacilities>
 			</li>
 			<li Class="CompProperties_StatEntry">
@@ -3398,7 +3400,7 @@
 		</statBases>
 		<building>
 			<paintable>true</paintable>
-			<joyKind>SSR_JoyKind_Game</joyKind>
+			<joyKind>SSR_JoyKind_ArcadeMachine</joyKind>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>

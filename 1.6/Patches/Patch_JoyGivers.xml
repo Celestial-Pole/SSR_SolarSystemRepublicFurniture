@@ -4,9 +4,9 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/JoyGiverDef[defName="WatchTelevision"]/thingDefs</xpath>
         <value>
-            <li>SSR_Television_S</li>
-            <li>SSR_Television_M</li>
-            <li>SSR_Television_B</li>
+            <li>SSR_Building_Television_S</li>
+            <li>SSR_Building_Television_M</li>
+            <li>SSR_Building_Television_B</li>
         </value>
     </Operation>
 

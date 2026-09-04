@@ -4,7 +4,7 @@
   	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 		<value>
-			<li>SSR_BedsideTable</li>
+			<li>SSR_Building_BedsideTable</li>
 		</value>
 	</Operation>
 

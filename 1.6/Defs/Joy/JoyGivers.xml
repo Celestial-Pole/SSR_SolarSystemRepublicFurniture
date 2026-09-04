@@ -2,16 +2,15 @@
 <Defs>
 
 	<!-- 游戏机 -->
-
 	<JoyGiverDef>
-		<defName>Use_SSR_Game</defName>
+		<defName>SSR_JoyGiver_ArcadeMachine</defName>
 		<giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
 		<baseChance>6</baseChance>
 		<thingDefs>
 			<li>SSR_Game</li>
 		</thingDefs>
-		<jobDef>Use_SSR_Game</jobDef>
-		<joyKind>SSR_JoyKind_Game</joyKind>
+		<jobDef>SSR_Job_ArcadeMachine</jobDef>
+		<joyKind>SSR_JoyKind_ArcadeMachine</joyKind>
 		<unroofedOnly>true</unroofedOnly>
 		<requiredCapacities>
 			<li>Sight</li>

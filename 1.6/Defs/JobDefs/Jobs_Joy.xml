@@ -2,12 +2,12 @@
 <Defs>
 
 	<JobDef>
-		<defName>Use_SSR_Game</defName>
+		<defName>SSR_Job_ArcadeMachine</defName>
 		<driverClass>JobDriver_WatchBuilding</driverClass>
 		<reportString>玩游戏机。</reportString>
 		<joyDuration>4000</joyDuration>
 		<joyMaxParticipants>1</joyMaxParticipants>
-		<joyKind>SSR_JoyKind_Game</joyKind>
+		<joyKind>SSR_JoyKind_ArcadeMachine</joyKind>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 

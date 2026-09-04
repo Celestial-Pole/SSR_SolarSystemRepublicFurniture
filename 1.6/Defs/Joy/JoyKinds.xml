@@ -3,7 +3,7 @@
 
 	<!-- 游戏机 -->
 	<JoyKindDef>
-		<defName>SSR_JoyKind_Game</defName>
+		<defName>SSR_JoyKind_ArcadeMachine</defName>
 		<label>玩游戏机</label>
 	</JoyKindDef>
 
