@@ -508,7 +508,7 @@
 
 	<!-- 沙发床 -->
 
-	<ThingDef ParentName="BasicBedBase">
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_BasicBedBase">
 		<defName>SSR_Building_SofaBed</defName>
 		<label>沙发床</label>
 		<description>沙发床</description>
@@ -550,7 +550,7 @@
 
 	<!-- 床 -->
 
-	<ThingDef ParentName="BasicBedBase">
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_BasicBedBase">
 		<defName>SSR_Building_Bed</defName>
 		<label>床</label>
 		<description>床</description>
@@ -591,7 +591,7 @@
 
 	<!-- 双人床 -->
 
-	<ThingDef ParentName="BasicBedBase">
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_BasicBedBase">
 		<defName>SSR_Building_DoubleBed</defName>
 		<label>双人床</label>
 		<description>双人床</description>
