@@ -7,7 +7,7 @@
 		<giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
 		<baseChance>6</baseChance>
 		<thingDefs>
-			<li>SSR_Game</li>
+			<li>SSR_Building_ArcadeMachine</li>
 		</thingDefs>
 		<jobDef>SSR_Job_ArcadeMachine</jobDef>
 		<joyKind>SSR_JoyKind_ArcadeMachine</joyKind>
