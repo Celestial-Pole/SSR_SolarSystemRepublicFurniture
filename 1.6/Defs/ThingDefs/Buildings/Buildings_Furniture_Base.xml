@@ -14,6 +14,19 @@
 		</modExtensions>
 	</ThingDef>
 
+	<ThingDef ParentName="BasicBedBase" Name="SSR_BuildingBase_Furniture_BasicBedBase" Abstract="True">
+		<designationCategory>SSR_DesignationCategory</designationCategory>
+		<thingCategories>
+			<li>SSR_Furniture</li>
+		</thingCategories>
+		<modExtensions>
+			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
+				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
+				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
     <ThingDef ParentName="SansComfortBedBase" Name="SSR_BuildingBase_Furniture_SansComfortBedBase" Abstract="True">
 		<designationCategory>SSR_DesignationCategory</designationCategory>
 		<thingCategories>
