@@ -2597,7 +2597,9 @@
 			<li>(0,0,-1)</li>
 		</multipleInteractionCellOffsets>
 		<descriptionHyperlinks>
+			<ThingDef>Blackboard</ThingDef>
 			<ThingDef>SSR_Building_Blackboard</ThingDef>
+			<ThingDef>SSR_Building_WallMountedBlackboard</ThingDef>
 		</descriptionHyperlinks>
 		<passability>PassThroughOnly</passability>
 		<canOverlapZones>false</canOverlapZones>
@@ -2630,6 +2632,7 @@
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
+					<li>Blackboard</li>
 					<li>SSR_Building_Blackboard</li>
 					<li>SSR_Building_WallMountedBlackboard</li>
 				</linkableFacilities>
@@ -2679,7 +2682,9 @@
 			<li>(0,0,-1)</li>
 		</multipleInteractionCellOffsets>
 		<descriptionHyperlinks>
+			<ThingDef>Blackboard</ThingDef>
 			<ThingDef>SSR_Building_Blackboard</ThingDef>
+			<ThingDef>SSR_Building_WallMountedBlackboard</ThingDef>
 		</descriptionHyperlinks>
 		<passability>PassThroughOnly</passability>
 		<canOverlapZones>false</canOverlapZones>
@@ -2712,6 +2717,7 @@
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
+					<li>Blackboard</li>
 					<li>SSR_Building_Blackboard</li>
 					<li>SSR_Building_WallMountedBlackboard</li>
 				</linkableFacilities>
@@ -2758,6 +2764,8 @@
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<descriptionHyperlinks>
 			<ThingDef>SchoolDesk</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x1c</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x2c</ThingDef>
 		</descriptionHyperlinks>
 		<altitudeLayer>Building</altitudeLayer>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -2825,6 +2833,8 @@
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<descriptionHyperlinks>
 			<ThingDef>SchoolDesk</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x1c</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x2c</ThingDef>
 		</descriptionHyperlinks>
 		<altitudeLayer>Building</altitudeLayer>
 		<minifiedDef>MinifiedThing</minifiedDef>

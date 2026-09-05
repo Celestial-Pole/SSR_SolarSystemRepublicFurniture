@@ -8,4 +8,28 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[ defName="SchoolDesk"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+		<value>
+			<li>SSR_Building_Blackboard</li>
+			<li>SSR_Building_WallMountedBlackboard</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[ defName="SchoolDesk"]/descriptionHyperlinks</xpath>
+		<value>
+			<ThingDef>SSR_Building_Blackboard</ThingDef>
+			<ThingDef>SSR_Building_WallMountedBlackboard</ThingDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[ defName="Blackboard"]/descriptionHyperlinks</xpath>
+		<value>
+			<ThingDef>SSR_Building_SchoolTable1x1c</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x2c</ThingDef>
+		</value>
+	</Operation>
+
 </Patch>
