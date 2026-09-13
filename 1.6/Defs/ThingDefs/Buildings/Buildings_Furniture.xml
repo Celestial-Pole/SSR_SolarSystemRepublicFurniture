@@ -261,7 +261,7 @@
 		</graphicData>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>1</fillPercent>
@@ -350,7 +350,7 @@
 		</graphicData>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>1</fillPercent>
@@ -439,7 +439,7 @@
 		</graphicData>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>1</fillPercent>
@@ -700,6 +700,7 @@
 				<volume>(0.3, 0.6, 0.3)</volume>
 			</shadowData>
 		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -765,6 +766,7 @@
 		<hasInteractionCell>true</hasInteractionCell>
 		<interactionCellOffset>(0,0,1)</interactionCellOffset>
 		<size>(1,1)</size>
+		<uiIconScale>0.75</uiIconScale>
 		<researchPrerequisites>
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
@@ -964,7 +966,7 @@
 			</damageData>
 		</graphicData>
 		<defaultPlacingRot>North</defaultPlacingRot>
-		<uiIconScale>0.65</uiIconScale>
+		<uiIconScale>0.85</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -1046,7 +1048,7 @@
 		</graphicData>
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>1</fillPercent>
@@ -1125,7 +1127,7 @@
 		</graphicData>
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>1</fillPercent>
@@ -1204,7 +1206,7 @@
 		</graphicData>
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<uiIconScale>0.65</uiIconScale>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>1</fillPercent>
@@ -2279,7 +2281,7 @@
 			<texPath>Things/Building/Furniture/EndTable/EndTableR1x3</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(3,1)</drawSize>
+			<drawSize>(4.15,4.15)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -2908,7 +2910,7 @@
 		<pathCost>14</pathCost>
 		<rotatable>false</rotatable>
 		<size>(1,1)</size>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -3016,6 +3018,7 @@
 			<Mass>7.5</Mass>
 		</statBases>
 		<uiIconPath>Things/Building/Furniture/TabletopDecoration/Lamp_east</uiIconPath>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<rotatable>true</rotatable>
@@ -3179,6 +3182,7 @@
 		<pathCost>14</pathCost>
 		<rotatable>false</rotatable>
 		<size>(1,1)</size>
+		<uiIconScale>2</uiIconScale>
 		<uiIconOffset>(0, 0)</uiIconOffset>
 		<building>
 			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
@@ -3247,7 +3251,8 @@
 		<pathCost>14</pathCost>
 		<rotatable>false</rotatable>
 		<size>(1,1)</size>
-		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiIconScale>2</uiIconScale>
+		<uiIconOffset>(0, 0)</uiIconOffset>
 		<building>
 			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
 			<destroyShakeAmount>0</destroyShakeAmount>
@@ -3381,6 +3386,49 @@
 		</researchPrerequisites>
 	</ThingDef>
 
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Furniture_FakeBonsai</defName>
+		<label>假盆栽</label>
+		<description>一盆用木头精心雕刻并染色的假盆景。它不需要浇水，也永远不会枯萎，那一抹常驻的绿色能为房间带来一丝生机。</description>
+		<graphicData>
+			<!-- 请替换为你的盆景贴图路径 -->
+			<texPath>Things/Building/Furniture/SSR_Furniture_FakeBonsai/SSR_Furniture_FakeBonsai</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.8,1.8)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.3, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
+		<uiOrder>2610</uiOrder>
+		<fillPercent>0.20</fillPercent>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<!-- 小人可以踩过去，但会稍微减速 -->
+		<pathCost>30</pathCost>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<!-- 建造很快 -->
+			<Mass>2</Mass>
+			<Flammability>1.0</Flammability>
+			<!-- 木头做的，易燃 -->
+			<Beauty>8</Beauty>
+			<!-- 提供 8 点固定美观度，略好于原版的普通盆栽 -->
+		</statBases>
+		<!-- 消耗 15 个木头 -->
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+	</ThingDef>
+
 	<!-- 游戏机 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
@@ -3401,6 +3449,8 @@
 		<hasInteractionCell>true</hasInteractionCell>
 		<interactionCellOffset>(0,0,1)</interactionCellOffset>
 		<minifiedDef>MinifiedThing</minifiedDef>
+		<uiIconScale>0.75</uiIconScale>
+		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
