@@ -1355,9 +1355,6 @@
 			<MarketValue>350</MarketValue>
 			<Mass>7.5</Mass>
 		</statBases>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<rotatable>true</rotatable>
@@ -3411,9 +3408,6 @@
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<uiOrder>2610</uiOrder>
 		<fillPercent>0.20</fillPercent>
-		<thingCategories>
-			<li>BuildingsFurniture</li>
-		</thingCategories>
 		<!-- 小人可以踩过去，但会稍微减速 -->
 		<pathCost>30</pathCost>
 		<rotatable>true</rotatable>
