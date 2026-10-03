@@ -3411,6 +3411,10 @@
 		<!-- 小人可以踩过去，但会稍微减速 -->
 		<pathCost>30</pathCost>
 		<rotatable>true</rotatable>
+		<!-- 消耗 15 个木头 -->
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<WorkToBuild>500</WorkToBuild>
@@ -3421,10 +3425,9 @@
 			<Beauty>8</Beauty>
 			<!-- 提供 8 点固定美观度，略好于原版的普通盆栽 -->
 		</statBases>
-		<!-- 消耗 15 个木头 -->
-		<costList>
-			<WoodLog>15</WoodLog>
-		</costList>
+		<researchPrerequisites>
+			<li>SSR_Research_EFBuilding</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<!-- 游戏机 -->
