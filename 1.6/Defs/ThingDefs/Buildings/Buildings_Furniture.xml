@@ -525,7 +525,7 @@
 
 	<!-- ====组合式衣柜==== -->
 
-	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+	<!--<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
 		<defName>SSR_Building_Wardrobe_Lift</defName>
 		<label>衣柜(左)</label>
 		<description>衣柜(左)</description>
@@ -760,7 +760,7 @@
 				<maxDistance>4</maxDistance>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 
 	<!--———— 餐厅 ————-->
 
@@ -1470,7 +1470,7 @@
 
 	<!-- ====组合式书柜==== -->
 
-	<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
+	<!--<ThingDef ParentName="SSR_BuildingBase_Furniture_FurnitureWithQualityBase">
 		<defName>SSR_Building_Bookcase_Lift</defName>
 		<label>书柜(左)</label>
 		<description>书柜(左)</description>
@@ -1735,7 +1735,7 @@
 				<maxDistance>20</maxDistance>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 
 	<!--———— 客厅 ————-->
 
