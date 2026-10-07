@@ -5,6 +5,9 @@
 		<xpath>Defs/ThingDef[@Name="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 		<value>
 			<li>SSR_Building_BedsideTable</li>
+			<li>SSR_Building_SeparateWardrobeA</li>
+			<li>SSR_Building_SeparateWardrobeB</li>
+			<li>SSR_Building_SeparateWardrobeBigThree</li>
 		</value>
 	</Operation>
 
@@ -29,15 +32,6 @@
 		<value>
 			<ThingDef>SSR_Building_SchoolTable1x1c</ThingDef>
 			<ThingDef>SSR_Building_SchoolTable1x2c</ThingDef>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[ defName="BasicBedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-		<value>
-			<li>SSR_Building_SeparateWardrobeA</li>
-			<li>SSR_Building_SeparateWardrobeB</li>
-			<li>SSR_Building_SeparateWardrobeBigThree</li>
 		</value>
 	</Operation>
 

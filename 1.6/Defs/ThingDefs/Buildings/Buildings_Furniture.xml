@@ -33,15 +33,9 @@
 		<building>
 			<paintable>true</paintable>
 		</building>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
-		<modExtensions>
-			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
-				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
-				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<!-- 双人床 -->
@@ -76,15 +70,9 @@
 		<building>
 			<paintable>true</paintable>
 		</building>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
-		<modExtensions>
-			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
-				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
-				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<!-- 婴儿床 -->
@@ -132,7 +120,7 @@
 			<bed_DisplayOwnerType>false</bed_DisplayOwnerType>
 			<paintable>true</paintable>
 		</building>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
 	</ThingDef>
@@ -168,15 +156,9 @@
 			<paintable>true</paintable>
 			<bed_showSleeperBody>True</bed_showSleeperBody>
 		</building>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
-		<modExtensions>
-			<li Class="FS_SSR.UI.Ext_DesignationCategoryInner">
-				<!-- SSR_DesignationCategory分类的必须带此ext注明子分类 -->
-				<innerCategory>SSR_DesignationInnerCategory_Furniture</innerCategory>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<!-- 床头柜 -->
