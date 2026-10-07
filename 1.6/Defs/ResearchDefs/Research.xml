@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ResearchProjectDef ParentName="SSR_ResearchProjectIndustrial">
+		<defName>SSR_Research_EFBuilding</defName>
+		<label>地球联邦家具</label>
+		<description>地球联邦风格的家具。</description>
+		<requiredResearchFacilities>
+			<li>SSR_Building_DataTerminal</li>
+		</requiredResearchFacilities>
+		<baseCost>500</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>
