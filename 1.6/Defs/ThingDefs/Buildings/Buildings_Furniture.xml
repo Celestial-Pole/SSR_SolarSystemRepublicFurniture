@@ -223,7 +223,7 @@
 			<Mass>15</Mass>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Building/Misc/SSR_StylingStation</texPath>
+			<texPath>Things/Building/Furniture/SSR_StylingStation/SSR_StylingStation</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.31,2.31)</drawSize>
@@ -786,7 +786,7 @@
 		<researchPrerequisites>
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
-		<costStuffCount>110</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<pathCost>30</pathCost>
 		<fillPercent>0.40</fillPercent>
 		<designationHotKey>Misc8</designationHotKey>
@@ -838,7 +838,7 @@
 		<researchPrerequisites>
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
-		<costStuffCount>110</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<pathCost>30</pathCost>
 		<fillPercent>0.40</fillPercent>
 		<designationHotKey>Misc8</designationHotKey>
@@ -891,7 +891,7 @@
 		<researchPrerequisites>
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
-		<costStuffCount>110</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<pathCost>30</pathCost>
 		<fillPercent>0.40</fillPercent>
 		<designationHotKey>Misc8</designationHotKey>
@@ -970,6 +970,78 @@
 		</statBases>
 		<size>(1,1)</size>
 		<costStuffCount>28</costStuffCount>
+		<researchPrerequisites>
+			<li>SSR_Research_EFBuilding</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- 方形大餐桌 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Building_SquareTable3x3c</defName>
+		<label>方形大餐桌</label>
+		<description>方形大餐桌。</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Table/SquareTable3x3</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<rotatable>false</rotatable>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(3,3)</size>
+		<costStuffCount>48</costStuffCount>
+		<researchPrerequisites>
+			<li>SSR_Research_EFBuilding</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- 圆形大餐桌 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+		<defName>SSR_Building_RotundityTable3x3c</defName>
+		<label>圆形大餐桌</label>
+		<description>圆形大餐桌。</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Table/RotundityTable3x3</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<rotatable>false</rotatable>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>4</Beauty>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(3,3)</size>
+		<costStuffCount>48</costStuffCount>
 		<researchPrerequisites>
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
