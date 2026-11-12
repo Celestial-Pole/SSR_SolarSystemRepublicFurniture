@@ -2841,7 +2841,7 @@
 	<!-- 小黑板 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Building_Blackboard</defName>
+		<defName>SSR_Building_SmallBlackboard</defName>
 		<label>黑板</label>
 		<description>黑板</description>
 		<graphicData>
@@ -2909,7 +2909,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
-		<defName>SSR_Building_WallMountedBlackboard</defName>
+		<defName>SSR_Building_SmallWallMountedBlackboard</defName>
 		<label>黑板（挂式）</label>
 		<description>黑板（挂式）</description>
 		<graphicData>

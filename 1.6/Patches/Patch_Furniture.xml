@@ -14,6 +14,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[ defName="SchoolDesk"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 		<value>
+			<li>SSR_Building_SmallBlackboard</li>
+			<li>SSR_Building_SmallWallMountedBlackboard</li>
 			<li>SSR_Building_Blackboard</li>
 			<li>SSR_Building_WallMountedBlackboard</li>
 		</value>
@@ -22,6 +24,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[ defName="SchoolDesk"]/descriptionHyperlinks</xpath>
 		<value>
+			<ThingDef>SSR_Building_SmallBlackboard</ThingDef>
+			<ThingDef>SSR_Building_SmallWallMountedBlackboard</ThingDef>
 			<ThingDef>SSR_Building_Blackboard</ThingDef>
 			<ThingDef>SSR_Building_WallMountedBlackboard</ThingDef>
 		</value>
