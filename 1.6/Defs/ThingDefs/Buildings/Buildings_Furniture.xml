@@ -903,6 +903,8 @@
 		</building>
 	</ThingDef>
 
+	<!--  -->
+
 	<!-- 方形小餐桌 -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
@@ -1049,7 +1051,47 @@
 
 	<!-- ====组合式桌子==== -->
 
-	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableLinkBase">
+		<defName>SSR_Building_LinkedTable</defName>
+		<label>组合式桌子</label>
+		<description>An impassable wall. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/LinkedTable/LinkedTable_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconPath>Things/Building/Furniture/LinkedTable/LinkedTable_Icon</uiIconPath>
+		<uiIconPathsStuff Inherit="False"/>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>520</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<holdsRoof>false</holdsRoof>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1.0</fillPercent>
+		<coversFloor>true</coversFloor>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+	</ThingDef>
+
+	<!--<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
 		<defName>SSR_Building_Table_A_Corner</defName>
 		<label>组合式桌子(角)</label>
 		<graphicData>
@@ -1150,8 +1192,6 @@
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
 	</ThingDef>
-
-	<!-- ====组合式餐桌==== -->
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableGatherSpotBase">
 		<defName>SSR_Building_Table_B_Corner</defName>
@@ -1287,7 +1327,7 @@
 		<researchPrerequisites>
 			<li>SSR_Research_EFBuilding</li>
 		</researchPrerequisites>
-	</ThingDef>
+	</ThingDef>-->
 
 	<!--———— 办公室 ————-->
 
@@ -2794,6 +2834,147 @@
 			<li Class="CompProperties_InspectString">
 				<compClass>CompInspectStringSchooldesk</compClass>
 				<inspectString>Learning rate bonus</inspectString>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 小黑板 -->
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Building_Blackboard</defName>
+		<label>黑板</label>
+		<description>黑板</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Blackboard/SmallBlackboard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+			<drawOffsetEast>(0.25,0,0)</drawOffsetEast>
+			<drawOffsetWest>(-0.25,0,0)</drawOffsetWest>
+			<drawSize>(1.07,1.07)</drawSize>
+			<damageData>
+				<rectN>(0.1, 0.3, 1.8, 0.5)</rectN>
+				<rectS>(0.1, 0.3, 1.8, 0.5)</rectS>
+				<rectE>(0.45, 0, 0.2, 1)</rectE>
+				<rectW>(0.55, 0, 0.2, 1)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(2, 0.5, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>7</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<researchPrerequisites>
+			<li>SSR_Research_EFBuilding</li>
+		</researchPrerequisites>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<descriptionHyperlinks>
+			<ThingDef>SchoolDesk</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x1c</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x2c</ThingDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="CompProperties_InspectString">
+				<compClass>CompInspectStringBlackboard</compClass>
+				<inspectString>Learning rate</inspectString>
+			</li>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>3</maxSimultaneous>
+				<maxDistance>6</maxDistance>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SSR_BuildingBase_Furniture">
+		<defName>SSR_Building_WallMountedBlackboard</defName>
+		<label>黑板（挂式）</label>
+		<description>黑板（挂式）</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Blackboard/SmallWallMountedBlackboard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawOffsetSouth>(0,0,-0.5)</drawOffsetSouth>
+			<drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+			<drawOffsetEast>(0.32,0,0)</drawOffsetEast>
+			<drawOffsetWest>(-0.32,0,0)</drawOffsetWest>
+			<drawSize>(1.07,1.07)</drawSize>
+			<damageData>
+				<rectN>(0.1, 0.3, 1.8, 0.5)</rectN>
+				<rectS>(0.1, 0.3, 1.8, 0.5)</rectS>
+				<rectE>(0.45, 0, 0.2, 1)</rectE>
+				<rectW>(0.55, 0, 0.2, 1)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(2, 0.5, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Mass>7</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<size>(1,1)</size>
+		<building>
+			<paintable>true</paintable>
+			<isEdifice>false</isEdifice>
+			<isAttachment>true</isAttachment>
+		</building>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>50</pathCost>
+		<fillPercent>0.5</fillPercent>
+		<researchPrerequisites>
+			<li>SSR_Research_EFBuilding</li>
+		</researchPrerequisites>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<placeWorkers>
+			<li>Placeworker_AttachedToWall</li>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<descriptionHyperlinks>
+			<ThingDef>SchoolDesk</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x1c</ThingDef>
+			<ThingDef>SSR_Building_SchoolTable1x2c</ThingDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="CompProperties_InspectString">
+				<compClass>CompInspectStringBlackboard</compClass>
+				<inspectString>Learning rate</inspectString>
+			</li>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>3</maxSimultaneous>
+				<maxDistance>6</maxDistance>
 			</li>
 		</comps>
 	</ThingDef>

@@ -65,5 +65,42 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
+	<ThingDef ParentName="SSR_BuildingBase_Furniture_TableBase" Name="SSR_BuildingBase_Furniture_TableLinkBase" Abstract="True">
+		<graphicData>
+			<linkType>CornerFiller</linkType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<passability>Impassable</passability>
+		<holdsRoof>true</holdsRoof>
+		<useHitPoints>True</useHitPoints>
+		<building>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<isInert>true</isInert>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<paintable>true</paintable>
+			<relatedBuildCommands>
+				<li>Door</li>
+				<li>Autodoor</li>
+				<li>OrnateDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
+				<li>Cooler</li>
+				<li>Vent</li>
+			</relatedBuildCommands>
+		</building>
+	</ThingDef>
 
 </Defs>
