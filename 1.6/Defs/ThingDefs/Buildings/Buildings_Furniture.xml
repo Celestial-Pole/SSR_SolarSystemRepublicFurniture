@@ -2700,6 +2700,8 @@
 		</multipleInteractionCellOffsets>
 		<descriptionHyperlinks>
 			<ThingDef>Blackboard</ThingDef>
+			<ThingDef>SSR_Building_SmallBlackboard</ThingDef>
+			<ThingDef>SSR_Building_SmallWallMountedBlackboard</ThingDef>
 			<ThingDef>SSR_Building_Blackboard</ThingDef>
 			<ThingDef>SSR_Building_WallMountedBlackboard</ThingDef>
 		</descriptionHyperlinks>
@@ -2735,6 +2737,8 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>Blackboard</li>
+					<li>SSR_Building_SmallBlackboard</li>
+					<li>SSR_Building_SmallWallMountedBlackboard</li>
 					<li>SSR_Building_Blackboard</li>
 					<li>SSR_Building_WallMountedBlackboard</li>
 				</linkableFacilities>
@@ -2785,6 +2789,8 @@
 		</multipleInteractionCellOffsets>
 		<descriptionHyperlinks>
 			<ThingDef>Blackboard</ThingDef>
+			<ThingDef>SSR_Building_SmallBlackboard</ThingDef>
+			<ThingDef>SSR_Building_SmallWallMountedBlackboard</ThingDef>
 			<ThingDef>SSR_Building_Blackboard</ThingDef>
 			<ThingDef>SSR_Building_WallMountedBlackboard</ThingDef>
 		</descriptionHyperlinks>
@@ -2820,6 +2826,8 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>Blackboard</li>
+					<li>SSR_Building_SmallBlackboard</li>
+					<li>SSR_Building_SmallWallMountedBlackboard</li>
 					<li>SSR_Building_Blackboard</li>
 					<li>SSR_Building_WallMountedBlackboard</li>
 				</linkableFacilities>
@@ -2842,8 +2850,8 @@
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
 		<defName>SSR_Building_SmallBlackboard</defName>
-		<label>黑板</label>
-		<description>黑板</description>
+		<label>小黑板</label>
+		<description>小黑板</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Blackboard/SmallBlackboard</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -2910,8 +2918,8 @@
 
 	<ThingDef ParentName="SSR_BuildingBase_Furniture">
 		<defName>SSR_Building_SmallWallMountedBlackboard</defName>
-		<label>黑板（挂式）</label>
-		<description>黑板（挂式）</description>
+		<label>小黑板（挂式）</label>
+		<description>小黑板（挂式）</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Blackboard/SmallWallMountedBlackboard</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
