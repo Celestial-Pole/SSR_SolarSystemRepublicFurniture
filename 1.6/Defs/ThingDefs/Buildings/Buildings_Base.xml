@@ -82,24 +82,17 @@
 		</graphicData>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
-		<passability>Impassable</passability>
-		<holdsRoof>true</holdsRoof>
+		<passability>Standable</passability>
+		<holdsRoof>false</holdsRoof>
 		<useHitPoints>True</useHitPoints>
 		<building>
 			<supportsWallAttachments>true</supportsWallAttachments>
 			<isInert>true</isInert>
+			<isWall>true</isWall>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>false</ai_chillDestination>
 			<paintable>true</paintable>
-			<relatedBuildCommands>
-				<li>Door</li>
-				<li>Autodoor</li>
-				<li>OrnateDoor</li>
-				<li MayRequire="Ludeon.RimWorld.Anomaly">SecurityDoor</li>
-				<li MayRequire="Ludeon.RimWorld.Odyssey">VacBarrier</li>
-				<li>Cooler</li>
-				<li>Vent</li>
-			</relatedBuildCommands>
+			<isStuffableAirtight>false</isStuffableAirtight>
 		</building>
 	</ThingDef>
 

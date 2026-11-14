@@ -1069,7 +1069,6 @@
 			<Flammability>0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-		<holdsRoof>false</holdsRoof>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
 		<blockWind>true</blockWind>
