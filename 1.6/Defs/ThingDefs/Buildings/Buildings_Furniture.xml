@@ -1085,7 +1085,7 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<building>
 			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/Furniture/LinkedTable/LinkedTable_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 		</building>
 	</ThingDef>
