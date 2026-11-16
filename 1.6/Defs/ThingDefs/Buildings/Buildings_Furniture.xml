@@ -1058,7 +1058,13 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/LinkedTable/LinkedTable_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+			<linkFlags>
+                <li>Custom1</li>
+            </linkFlags>
+        </graphicData>
+        <replaceTags>
+            <li>Custom1</li>
+        </replaceTags>
 		<uiIconPath>Things/Building/Furniture/LinkedTable/LinkedTable_Icon</uiIconPath>
 		<uiIconPathsStuff Inherit="False"/>
 		<costStuffCount>20</costStuffCount>
